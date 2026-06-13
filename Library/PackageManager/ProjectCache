@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Documentos/GitHub/Progra-2-Projecto/Progra-2-Projecto/Packages/manifest.json
+    m_FilePath: D:/GithubProjects/Progra-2-Projecto/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639100722071583656
-    m_Hash: 3917522215
+      ticks: 639169043296915676
+    m_Hash: 641888088
   m_LockFileStatus:
-    m_FilePath: D:/Documentos/GitHub/Progra-2-Projecto/Progra-2-Projecto/Packages/packages-lock.json
+    m_FilePath: D:/GithubProjects/Progra-2-Projecto/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639100723133151147
-    m_Hash: 1435076190
+      ticks: 639169043296943670
+    m_Hash: 3709070958
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: D:/Documentos/GitHub/Progra-2-Projecto/Progra-2-Projecto/Packages
-m_EditorVersion: 6000.3.10f1 (e35f0c77bd8e)
+m_ProjectPath: D:/GithubProjects/Progra-2-Projecto/Packages
+m_EditorVersion: 6000.3.11f1 (3000ef702840)
 m_ResolvedPackages:
-- packageId: com.unity.ai.navigation@2.0.10
+- packageId: com.unity.ai.navigation@2.0.11
   testable: 0
   isDirectDependency: 1
-  version: 2.0.10
+  version: 2.0.11
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.ai.navigation@c33a115e9883
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.ai.navigation@78534c21b27d
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -71,7 +71,6 @@ m_ResolvedPackages:
     - 2.0.12
     - 2.0.13
     compatible:
-    - 2.0.10
     - 2.0.11
     - 2.0.12
     - 2.0.13
@@ -117,16 +116,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639051061342660000
+  datePublishedTicks: 639071871875160000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
-    revision: 9f4e312ce74b9f52fe0802ee70aefff75ce6edb8
+    revision: b6751ff1ceb9a01f5b469d0aec8b249581bb7725
     path: 
   unityLifecycle:
-    version: 2.0.10
+    version: 2.0.11
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -137,9 +136,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n* Warning _Object.GetInstanceID()'' is obsolete:
-    ''GetInstanceID is deprecated_ was logged to the console in Unity 6.2 and newer.\n\n###
-    Changed\n* The unit test scripts are no longer delivered with the package."}'
+  upmReserved: '{"changelog":"### Fixed\n* Small correction in the UI definition
+    of the Navigation Updater window."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -153,10 +151,10 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: c33a115e988396e6eb96aa3a58e9fa0a937d08d5
+  fingerprint: 78534c21b27d2c95f8220f5db8dce95627a32911
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.0.10
+    minimumPackageVersion: 2.0.11
     minimumUnityVersion: 6000.0
   compliance:
     status: 0
@@ -164,12 +162,245 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.collab-proxy@2.11.3
+- packageId: com.unity.cinemachine@3.1.7
   testable: 0
   isDirectDependency: 1
-  version: 2.11.3
+  version: 3.1.7
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.collab-proxy@e566cd3e7623
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.cinemachine@f3f96bcb59af
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nCinemachine 3 is
+    a newer and better version of Cinemachine, but upgrading an existing project
+    from 2.X will likely require some effort.  If you're considering upgrading an
+    older project, please see our upgrade guide in the user manual."
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.8.6
+    - 2.8.9
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 2.9.4
+    - 2.9.5
+    - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 2.10.4
+    - 2.10.5
+    - 2.10.6
+    - 2.10.7
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    - 3.1.5
+    - 3.1.6
+    - 3.1.7
+    compatible:
+    - 2.10.6
+    - 2.10.7
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    - 3.1.5
+    - 3.1.6
+    - 3.1.7
+    recommended: 3.1.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.splines
+    version: 2.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.splines
+    version: 2.8.3
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.1.1
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639166109295070000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: 8cb586bf217170b0035e42685880fe1fdefc9729
+    path: 
+  unityLifecycle:
+    version: 2.10.6
+    nextVersion: 
+    recommendedVersion: 3.1.0
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bugfixes\n- Fixed stack frame snapshot not resetting
+    when CameraBlendStack completed blend.\n- Fixed blend cancellation not taking
+    into account updates to \"cancelled\" camera state\n- Added a null check to avoid
+    an issue when deleting a CinemachineCamera with a CinemachinePixelPerfect extension.\n\n###
+    Changed\n- Added support for fast enter play mode."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: f3f96bcb59af572d4d28704d53f6388471d7dd21
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.10.6
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.collab-proxy@2.11.4
+  testable: 0
+  isDirectDependency: 1
+  version: 2.11.4
+  source: 1
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -275,7 +506,6 @@ m_ResolvedPackages:
     - 2.11.4
     - 2.12.4
     compatible:
-    - 2.11.3
     - 2.11.4
     - 2.12.4
     recommended: 2.11.4
@@ -313,16 +543,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639047683637960000
+  datePublishedTicks: 639076172810380000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.11/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 23b6a337b59c8ad04d7b78f38448ad0addcb7954
+    revision: 164a710206077e1184a134f18801dae560fdf28a
     path: 
   unityLifecycle:
-    version: 2.11.3
+    version: 2.11.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -333,9 +563,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed accessing Editor internals directly
-    on versions below Unity 6.3.\n- Fixed a compilation error caused by an invalid
-    duplicated GUID in WaitForPendingOperations.cs.meta in 2.11.2."}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed deprecated instanceID API usages
+    for Unity 6.5."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -349,10 +578,10 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: e566cd3e762373591f6828e86f2018eed8021356
+  fingerprint: a5329f833fa805a96ac8b0a1eb09dc64c076b032
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.11.3
+    minimumPackageVersion: 2.11.4
     minimumUnityVersion: 2021.3.0f1
   compliance:
     status: 0
@@ -365,7 +594,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.39
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.ide.rider@4504839d03f7
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.ide.rider@4504839d03f7
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -510,7 +739,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.26
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -634,12 +863,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.inputsystem@1.18.0
+- packageId: com.unity.inputsystem@1.19.0
   testable: 0
   isDirectDependency: 1
-  version: 1.18.0
+  version: 1.19.0
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.inputsystem@57d0e36f6123
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -717,9 +946,8 @@ m_ResolvedPackages:
     - 1.18.0
     - 1.19.0
     compatible:
-    - 1.18.0
     - 1.19.0
-    recommended: 1.18.0
+    recommended: 1.19.0
     deprecated: []
   dependencies:
   - name: com.unity.modules.uielements
@@ -761,16 +989,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639039807602510000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.18/manual/index.html
+  datePublishedTicks: 639075089033030000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: c0d61169c3ccce912ce6a8dec13a30e6e35fdeb8
+    revision: ca8d898356596a91bda6505e506cc1a4bb3a9fa6
     path: 
   unityLifecycle:
-    version: 1.18.0
+    version: 1.19.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -781,16 +1009,20 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n\n- Updated documentation to reflect that
-    the OnMouse MonoBehaviour events are now supported in Unity 6.4 and above.\n-
-    Updated the supported devices documentation to clarify that touchscreens are
-    supported on Linux.\n- Updated documentation to reflect PS5 controller support
-    on Linux.\n\n### Fixed\n\n- Fixed add buttons use add icon in input actions window
-    (ISX-2340)\n- Fixed warnings being generated on Unity 6.4 and 6.5. (ISX-2395).\n-
-    Fixed extra empty lines being displayed in the control binding list when mouse
-    buttons are pressed [ISXB-1677](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1677)\n-
-    Fixed InputActionReference not being set when attempting to set it on a Prefab
-    or ScriptableObject [ISXB-1787](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1787)"}'
+  upmReserved: '{"changelog":"### Changed\n\n- Reverted the deprecation of the USE_IMGUI_EDITOR_FOR_ASSETS
+    feature option (ISX-2397).\n- Updated `m_ActionAssetInstanceID` in PlayerInputEditor.cs
+    to use `EntityId` instead of `InstanceID`.\n- Consecutive wildcard characters
+    (''*'') used in input control-paths are now collapsed into a single wildcard
+    when multiple consecutive wildcard characters are present.\n\n### Fixed\n\n-
+    Fixed the `Auto-Save` toggle button with some extra pixels to align the text
+    in the window better.\n- Align title font size with toolbar style in `Input Action`
+    window.\n- Updated Action Properties headers to use colors consistent with GameObject
+    component headers.\n- Fixed misaligned Virtual Cursor when changing resolution
+    [ISXB-1119](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1119)\n-
+    Fixed an issue where `IndexOutOfRangeException` was thrown from `InputManagerStateMonitors.AddStateChangeMonitor`
+    when attempting to enable an action map from within an `InputAction.cancel` callback
+    when using control schemes. (ISXB-1767).\n\n### Added\n\n- Added `keywords` for
+    InputSystem project settings window."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -804,10 +1036,10 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 57d0e36f61231bc5a2579f37d81bf6fa02f40adc
+  fingerprint: 21a28c3a6c83903a93cf15d7d0714b773c50fdf6
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.18.0
+    minimumPackageVersion: 1.19.0
     minimumUnityVersion: 2022.3
   compliance:
     status: 0
@@ -820,7 +1052,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -927,7 +1159,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.3.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.render-pipelines.universal@37e0d4fc2503
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.render-pipelines.universal@e9f15c489688
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal Render Pipeline
@@ -1047,7 +1279,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 37e0d4fc2503d8d875c76879f8437f0d80a0e17d
+  fingerprint: e9f15c489688994a0a856622105e105023d070b5
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.3.0
@@ -1063,7 +1295,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.6.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -1159,12 +1391,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.timeline@1.8.10
+- packageId: com.unity.timeline@1.8.11
   testable: 0
   isDirectDependency: 1
-  version: 1.8.10
+  version: 1.8.11
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.timeline@7f8b2fb101b6
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.timeline@bfd27f8016ff
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1272,7 +1504,6 @@ m_ResolvedPackages:
     - 1.8.11
     - 1.8.12
     compatible:
-    - 1.8.10
     - 1.8.11
     - 1.8.12
     recommended: 1.8.12
@@ -1316,16 +1547,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639010941520280000
+  datePublishedTicks: 639076501551120000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: a83681b24217526a0f539d70ddca4abf270a5ada
+    revision: cdac322c9875133dd1579842f73adb7f463c6d0b
     path: 
   unityLifecycle:
-    version: 1.8.10
+    version: 1.8.11
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1336,10 +1567,9 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fix compilation error for version 2023.2
-    of the editor (TB-352)\n- Fixed an issue where it was possible for 2 clips to
-    have a micro overlap that was not detected as a blend, resulting in both clips
-    playing at the same time with a weight of one. (TB-345)"}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fix performance regression in Custom
+    Clip PlayableAsset Inspector where animated parameters caused Timeline Window
+    to refresh when scrubbing or playing the Timeline (UUM-133569)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -1353,10 +1583,10 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 7f8b2fb101b6053cc7472330401e94ff0c17b204
+  fingerprint: bfd27f8016ffda6a22579ffc468432a96b2cc5b6
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.8.10
+    minimumPackageVersion: 1.8.11
     minimumUnityVersion: 2022.3
   compliance:
     status: 0
@@ -1369,7 +1599,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.ugui@bb329a87fcdc
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.ugui@f17df9b1ab21
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: uGUI
@@ -1460,7 +1690,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: bb329a87fcdc5d55e815f3d804764d676674047e
+  fingerprint: f17df9b1ab21a9a2156e109eacf8dd2f65d03c8c
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -1471,12 +1701,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.visualscripting@1.9.9
+- packageId: com.unity.visualscripting@1.9.10
   testable: 0
   isDirectDependency: 1
-  version: 1.9.9
+  version: 1.9.10
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.visualscripting@eb6004dcc707
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1530,7 +1760,6 @@ m_ResolvedPackages:
     - 1.9.10
     - 1.9.11
     compatible:
-    - 1.9.9
     - 1.9.10
     - 1.9.11
     recommended: 1.9.11
@@ -1566,16 +1795,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638965671307960000
+  datePublishedTicks: 639074549415510000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 2bb93a09becf00b2343d1c670afbf3836f170f55
+    revision: 769bd2a46b6624d2f0f3d229d5885a57b3c4960e
     path: 
   unityLifecycle:
-    version: 1.9.9
+    version: 1.9.10
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1586,9 +1815,11 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed broken links to example codes in
-    API documentation.\n\n### Changed\n- Adds alt texts to images in documentation
-    to increase accessibility for screen readers."}'
+  upmReserved: '{"changelog":"### Changed\n- Replaced internal use of InstanceIDs
+    with the new EntityId (Unity 6.4+).\n- Migrate Mono APIs to CoreCLR-compatible
+    APIs available in Unity 6000.5 and above.\n### Fixed\n- Fixed loading icon showing
+    on the Visual Scripting components in the inspector during play mode when the
+    editor is compiling."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -1602,10 +1833,10 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 191c0d7e3b69bc0df1b6fed3a997c4c3a765ef6a
+  fingerprint: eb6004dcc7073b805dbf1ea9006b7a915978a186
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.9.9
+    minimumPackageVersion: 1.9.10
     minimumUnityVersion: 2021.3
   compliance:
     status: 0
@@ -1618,7 +1849,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.accessibility
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -1706,7 +1937,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.adaptiveperformance
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.adaptiveperformance
   assetPath: Packages/com.unity.modules.adaptiveperformance
   name: com.unity.modules.adaptiveperformance
   displayName: Adaptive Performance
@@ -1800,7 +2031,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.ai
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1888,7 +2119,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.androidjni
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1975,7 +2206,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.animation
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -2063,7 +2294,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.assetbundle
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -2151,7 +2382,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.audio
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -2239,7 +2470,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.cloth
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -2331,7 +2562,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.director
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -2427,7 +2658,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.imageconversion
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -2515,7 +2746,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.imgui
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -2603,7 +2834,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.jsonserialize
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -2691,7 +2922,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.particlesystem
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -2779,7 +3010,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.physics
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -2867,7 +3098,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.physics2d
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -2955,7 +3186,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.screencapture
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -3047,7 +3278,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.terrain
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -3135,7 +3366,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.terrainphysics
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -3231,7 +3462,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.tilemap
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -3322,7 +3553,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.ui
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -3410,7 +3641,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.uielements
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -3518,7 +3749,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.umbra
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -3606,7 +3837,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unityanalytics
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -3701,7 +3932,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequest
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -3789,7 +4020,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -3885,7 +4116,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequestaudio
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -3981,7 +4212,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequesttexture
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -4077,7 +4308,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequestwww
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -4189,7 +4420,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.vectorgraphics
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.vectorgraphics
   assetPath: Packages/com.unity.modules.vectorgraphics
   name: com.unity.modules.vectorgraphics
   displayName: Vector Graphics
@@ -4296,7 +4527,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.vehicles
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -4388,7 +4619,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.video
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -4488,7 +4719,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.vr
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -4591,7 +4822,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.wind
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -4679,7 +4910,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.xr
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -4779,7 +5010,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.subsystems
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -4871,7 +5102,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.modules.hierarchycore
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -4959,7 +5190,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -5050,7 +5281,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.3.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.render-pipelines.core@04ab0eefa0c3
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.render-pipelines.core@84bf82d10e47
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Scriptable Render Pipeline Core
@@ -5167,7 +5398,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 04ab0eefa0c333fd1eebb81cdd292c9409489de7
+  fingerprint: 84bf82d10e47fe9c6952143a444af22c06dd44d8
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.3.0
@@ -5183,7 +5414,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.3.0
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.shadergraph@c8830f61858d
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.shadergraph@4eb612570652
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5292,7 +5523,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: c8830f61858dade31ff36b4ded6b422f8100d290
+  fingerprint: 4eb612570652a926479a4b8b0683833c5b291097
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.3.0
@@ -5308,7 +5539,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal Render Pipeline Config
@@ -5420,12 +5651,156 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.splines@2.8.3
+  testable: 0
+  isDirectDependency: 0
+  version: 2.8.3
+  source: 1
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.splines@56b2023b4b9f
+  assetPath: Packages/com.unity.splines
+  name: com.unity.splines
+  displayName: Splines
+  author:
+    name: 
+    email: 
+    url: 
+  category: Tool
+  type: 
+  description: Work with curves and paths. Use the Splines package to generate objects
+    and behaviors along paths, create trajectories, and draw shapes.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 1.0.0-pre.5
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0-pre.2
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.1.0
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0
+    - 2.4.0
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.9.0
+    compatible:
+    - 2.8.3
+    - 2.8.4
+    - 2.9.0
+    recommended: 2.8.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.mathematics
+    version: 1.2.1
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 1.0.3
+  resolvedDependencies:
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.1.1
+  keywords:
+  - spline
+  - curve
+  - path
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639064372863710000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.splines@2.8/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.splines.git
+    revision: b4abf42c18a2b555ebf4e93b2069832e75dff984
+    path: 
+  unityLifecycle:
+    version: 2.8.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- [SPLB-374] Fixed a bug where spline tool
+    shortcuts would be active in the Scene view even when outside the context of
+    the spline tools.\n- [SPLB-370] Fixed incorrect tangent values when using `SplineUtility.FitSplineToPoints`.\n-
+    [SPLB-365] `EditorSplineUtility.SetKnotPlacementTool` correctly assigns the create
+    spline tool.\n- [SPLB-364] Fixed null reference & lockup when instantiating children
+    of SplineInstantiate component, when components gameobject is a prefab instance.\n-
+    [UUM-131876] Fixed a memory leak introduced in 2.8.2 that occurred when a Spline
+    became dirty.\n- [UUM-132208] Fixed a crash that occurred when a Prefab Variant
+    asset was used with a SplineInstantiate component.\n- [UUM-133630] Fixed the
+    help icon for splines components (SplineAnimate, SplineContainer, SplineExtrude,
+    SplineInstantiate) pointing to the wrong documentation link. It now points to
+    https://docs.unity3d.com/Packages/com.unity.splines@latest.\n\n### Changed\n-
+    [UUM-132118] Replaced internal use of InstanceIDs with the new EntityId (Unity
+    6.4+)."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 56b2023b4b9fd77fdc5b5ed3a4b62c388d76931c
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.8.3
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.searcher@4.9.4
   testable: 0
   isDirectDependency: 0
   version: 4.9.4
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.searcher@d45a78918735
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.searcher@d45a78918735
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -5533,7 +5908,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.28
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.burst@07790c2d06d9
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.burst@07790c2d06d9
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -5781,7 +6156,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.3
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -5892,7 +6267,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.6.2
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.collections@aea9d3bd5e19
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.collections@aea9d3bd5e19
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -6092,12 +6467,111 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.settings-manager@2.1.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.1
+  source: 1
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.settings-manager@0b8638c5ce86
+  assetPath: Packages/com.unity.settings-manager
+  name: com.unity.settings-manager
+  displayName: Settings Manager
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: A framework for making any serializable field a setting, complete
+    with a pre-built settings interface.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
+    - 2.0.1
+    - 2.1.0
+    - 2.1.1
+    compatible:
+    - 2.1.1
+    recommended: 2.1.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638956174685890000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 6eb5ed85eaf3276cc09f0cc4fc3311c72f0fc196
+    path: 
+  unityLifecycle:
+    version: 2.1.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changes\n\n- Enable Auto Reference on main assembly.\n\n###
+    Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify
+    that context menu items are relevant only to the selected category."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 0b8638c5ce86009d785da17b17aaf629047f64ce
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.1.1
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.nuget.mono-cecil@1.11.6
   testable: 0
   isDirectDependency: 0
   version: 1.11.6
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -6202,7 +6676,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.2.0
   source: 1
-  resolvedPath: D:\Documentos\GitHub\Progra-2-Projecto\Progra-2-Projecto\Library\PackageCache\com.unity.test-framework.performance@0840f58e4562
+  resolvedPath: D:\GithubProjects\Progra-2-Projecto\Library\PackageCache\com.unity.test-framework.performance@0840f58e4562
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -6363,4 +6837,4 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-m_BuiltInPackagesHash: 7eadf5d83ddf166884c0122071f22dfe987531e5
+m_BuiltInPackagesHash: cb7e97aa7f175dc1816d95e8f54493c08e905443

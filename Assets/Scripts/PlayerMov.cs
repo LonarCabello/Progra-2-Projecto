@@ -159,8 +159,9 @@ public class PlayerMov : MonoBehaviour
         }
 
         //Ataque Input
-        if (isGrounded && Input.GetMouseButtonDown(0) && !isAttacking)
+        if (isGrounded && Input.GetKeyDown(KeyCode.F) && !isAttacking)
         {
+            Debug.Log("Atacando");
             if (currentWeapon == WeaponType.None) return;
             Attack();
         }

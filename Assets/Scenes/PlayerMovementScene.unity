@@ -245,11 +245,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60.000004
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.031167716, y: 0.16010238, z: 0.0050578243, w: 0.9865953}
+  m_LocalRotation: {x: 0.051294975, y: 0.15996586, z: -0.00832403, w: 0.9857538}
   m_LocalPosition: {x: 0, y: 3.835, z: 3.6999998}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1222,19 +1222,19 @@ MonoBehaviour:
     Enabled: 0
     ObstacleLayers:
       serializedVersion: 2
-      m_Bits: 1
+      m_Bits: 0
     UseFollowTarget:
       Enabled: 0
       YOffset: 0
-    Damping: 0.5
+    Damping: 0
     SmoothingTime: 0
   TerrainResolution:
     Enabled: 1
     TerrainLayers:
       serializedVersion: 2
-      m_Bits: 1
+      m_Bits: 0
     MaximumRaycast: 10
-    Damping: 0.5
+    Damping: 0
 --- !u!114 &1728091317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
-  LookAtOffset: {x: 1, y: 1.7, z: 0}
+  LookAtOffset: {x: 1, y: 1.17, z: 0}
 --- !u!114 &1728091318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   Damping: {x: 0, y: 0, z: 0}
   ShoulderOffset: {x: 0, y: 0, z: 0}
   VerticalArmLength: 1.5
-  CameraSide: 1
+  CameraSide: 0
   CameraDistance: 3
   AvoidObstacles:
     Enabled: 0
@@ -1298,10 +1298,10 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 60.000004
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
     PhysicalProperties:
@@ -1325,7 +1325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728091315}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.031167716, y: 0.16010238, z: 0.0050578243, w: 0.9865953}
+  m_LocalRotation: {x: 0.051294975, y: 0.15996586, z: -0.00832403, w: 0.9857538}
   m_LocalPosition: {x: 0, y: 3.835, z: 3.6999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
