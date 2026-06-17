@@ -61,10 +61,18 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ProjectileBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyMotion.cs" />
     <Compile Include="Assets\Scripts\WeaponDamage.cs" />
     <Compile Include="Assets\Scripts\ThrowAxe.cs" />
     <Compile Include="Assets\Scripts\PlayerMov.cs" />
+    <Compile Include="Assets\Scripts\EnemySensor.cs" />
+    <Compile Include="Assets\Scripts\AlertEventManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyBrain.cs" />
+    <Compile Include="Assets\Scripts\EnemyData.cs" />
     <Compile Include="Assets\Kevin Iglesias\Human Animations\Scripts\SpineProxy.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Downloads\TutorialInfo\Readme.cs" />
     <Compile Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Throwing Animations\Scripts\HumanThrowingAnimationsController.cs" />

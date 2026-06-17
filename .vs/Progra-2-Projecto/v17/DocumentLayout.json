@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|d:\\githubprojects\\progra-2-projecto\\assets\\scripts\\playermov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|d:\\githubprojects\\progra-2-projecto\\assets\\scripts\\throwaxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\throwaxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|d:\\githubprojects\\progra-2-projecto\\assets\\scripts\\weapondamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapondamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeaponDamage.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\WeaponDamage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponDamage.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\WeaponDamage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WeaponDamage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T18:20:32.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThrowAxe.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\ThrowAxe.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThrowAxe.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\ThrowAxe.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThrowAxe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T18:13:20.163Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +58,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMov.cs",
               "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\PlayerMov.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMov.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAEwKEAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAkwFkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-12T23:34:54.287Z",
               "EditorCaption": ""

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639169043296915676
-    m_Hash: 641888088
+      ticks: 639169110359765647
+    m_Hash: 4102851295
   m_LockFileStatus:
     m_FilePath: D:/GithubProjects/Progra-2-Projecto/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639169043296943670
-    m_Hash: 3709070958
+      ticks: 639169110359775647
+    m_Hash: 3994754800
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

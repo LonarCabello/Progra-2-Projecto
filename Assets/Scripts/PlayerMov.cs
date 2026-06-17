@@ -19,7 +19,7 @@ public class PlayerMov : MonoBehaviour
     private bool isGrounded = false;
 
 
-    private bool running = false;
+    private bool isRunning = false;
     private bool isBlocking = false;
 
     [Header("Movimiento Camara")]
@@ -31,27 +31,25 @@ public class PlayerMov : MonoBehaviour
     private Vector3 movement;
 
     [Header("Sistema de Ataque")]
-
     [SerializeField] private float attackDuration = 1.15f;
-
     private bool isAttacking;
 
     [Header("Cambio de Armas")]
-
     [SerializeField] private GameObject battleAxe;
     [SerializeField] private GameObject sword;
+    [SerializeField] private GameObject throwAxeObj;
     private GameObject nearbyWeapon;
     [SerializeField] private GameObject axePickUpPrefab;
     [SerializeField] private GameObject swordPickUpPrefab;
     [SerializeField] private Transform dropPosition;
 
-
-    public enum WeaponType { BattleAxe, Sword, None }
+    public enum WeaponType { BattleAxe, Sword, None}
 
     public WeaponType currentWeapon;
 
 
     [Header("Hachas Arrojadizas")]
+    private bool isThrowingHold = false;
     [SerializeField] private GameObject throwAxePrefab;
     [SerializeField] Transform throwPoint;
     [SerializeField] float throwForce;
@@ -72,26 +70,26 @@ public class PlayerMov : MonoBehaviour
 
     void Update()
     {
-        // INPUTS
+        // -------------------------- INPUTS -----------------------------
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         //Running
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && !isThrowingHold && !isBlocking)
         {
-            running = true;
+            isRunning = true;
             animator.SetBool("isRunning", true);
         } 
         else
         {
-            running = false;
+            isRunning = false;
             animator.SetBool("isRunning", false);
         }
 
         //Block
         if (Input.GetMouseButton(1))
         {
-            if (!running)
+            if (!isRunning)
             {
                 isBlocking = true;
                 animator.SetBool("isBlocking", true);
@@ -122,6 +120,32 @@ public class PlayerMov : MonoBehaviour
             healMan.TakeDamage(20);
         }
 
+        //Ataque Input
+        if (isGrounded && Input.GetMouseButtonDown(0) && !isAttacking)
+        {
+            Debug.Log("Atacando");
+            if (currentWeapon == WeaponType.None) return;
+            Attack();
+        }
+
+        //Hacha Arrojadiza Input
+        if (Input.GetMouseButtonDown(2) && !isRunning && !isAttacking)
+        {
+            if (currentAxes <= 0) return;
+            ThrowAxeHold();
+            
+        }
+        if (Input.GetMouseButtonUp(2))
+        {
+            ThrowAxeRelease();
+        }
+
+        //Salto Input.
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            Jump();
+        }
+
         // DIRECCIÓN RELATIVA A CÁMARA
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
@@ -147,7 +171,12 @@ public class PlayerMov : MonoBehaviour
         animator.SetFloat("SpeedY", vertical);
 
         // ROTACIÓN HACIA MOVIMIENTO
-        if (movement != Vector3.zero && !isAttacking)
+
+        if (isThrowingHold) 
+        {
+            RotateTowardsCrosshair();
+        }
+        else if (movement != Vector3.zero && !isAttacking)
         {
             Quaternion targetRotation = Quaternion.LookRotation(movement);
 
@@ -156,30 +185,6 @@ public class PlayerMov : MonoBehaviour
                 targetRotation,
                 rotationSpeed * Time.deltaTime
             );
-        }
-
-        //Ataque Input
-        if (isGrounded && Input.GetKeyDown(KeyCode.F) && !isAttacking)
-        {
-            Debug.Log("Atacando");
-            if (currentWeapon == WeaponType.None) return;
-            Attack();
-        }
-
-        //Hacha Arrojadiza Input
-        if (Input.GetMouseButtonDown(2))
-        {
-            if (currentAxes <= 0) return;
-
-            currentAxes--;
-
-            ThrowAxe();
-        }
-
-        //Salto Input.
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            Jump();
         }
     }
 
@@ -201,7 +206,7 @@ public class PlayerMov : MonoBehaviour
             return;
         }
 
-        if (running)
+        if (isRunning)
         {
             rb.linearVelocity = new Vector3(
                 movement.x * speedRun,
@@ -317,6 +322,26 @@ public class PlayerMov : MonoBehaviour
         );
     }
 
+    private void ThrowAxeHold()
+    {
+        isThrowingHold = true;
+        EquipThrowingAxe();
+        animator.SetBool("IsThrowingHold", true);
+    }
+
+    private void ThrowAxeRelease()
+    {
+        if (!isThrowingHold) return;
+
+        isThrowingHold = false;
+
+        animator.SetBool("IsThrowingHold", false);
+        animator.SetTrigger("ThrowAxe");
+        currentAxes--;
+        ThrowAxe();
+        DesEquipThrowingAxe();
+    }
+
     //Salto
     private void Jump()
     {
@@ -364,7 +389,7 @@ public class PlayerMov : MonoBehaviour
     {
         battleAxe.SetActive(true);
         sword.SetActive(false);
-
+        throwAxeObj.SetActive(false);
         currentWeapon = WeaponType.BattleAxe;
     }
 
@@ -372,8 +397,29 @@ public class PlayerMov : MonoBehaviour
     {
         battleAxe.SetActive(false);
         sword.SetActive(true);
-
+        throwAxeObj.SetActive(false);
         currentWeapon = WeaponType.Sword;
+    }
+
+    private void EquipThrowingAxe()
+    {
+        battleAxe.SetActive(false);
+        sword.SetActive(false);
+        throwAxeObj.SetActive(true);
+    }
+
+    private void DesEquipThrowingAxe()
+    {
+        throwAxeObj.SetActive(false);
+
+        if (currentWeapon == WeaponType.BattleAxe)
+        {
+            EquipAxe();
+        }
+        if (currentWeapon == WeaponType.Sword)
+        {
+            EquipSword();
+        }
     }
 
     private void OnTriggerEnter(Collider col)
@@ -410,4 +456,42 @@ public class PlayerMov : MonoBehaviour
             currentWeapon = WeaponType.None;
         }
     }
+
+    private void RotateTowardsCrosshair()
+    {
+        Ray ray = Camera.main.ViewportPointToRay(
+            new Vector3(0.5f, 0.5f, 0f)
+        );
+
+        Vector3 targetPoint;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100f))
+        {
+            targetPoint = hit.point;
+        }
+        else
+        {
+            targetPoint = ray.origin + ray.direction * 100f;
+        }
+
+        Vector3 lookDirection =
+            targetPoint - transform.position;
+
+        lookDirection.y = 0f;
+
+        if (lookDirection.sqrMagnitude > 0.01f)
+        {
+            Quaternion targetRotation =
+                Quaternion.LookRotation(lookDirection);
+
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                targetRotation,
+                rotationSpeed * Time.deltaTime
+            );
+        }
+    }
+
 }

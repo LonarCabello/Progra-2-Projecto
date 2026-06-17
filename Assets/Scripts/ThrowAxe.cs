@@ -8,9 +8,12 @@ public class ThrowAxe : MonoBehaviour
     private Rigidbody rb;
     private bool isStuck = false;
 
+    CapsuleCollider capsuleCol;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>(); 
+        capsuleCol = GetComponent<CapsuleCollider>();
     }
     private void Update()
     {
@@ -72,6 +75,8 @@ public class ThrowAxe : MonoBehaviour
 
         rb.linearVelocity = Vector3.zero;
         rb.isKinematic = true;
+
+        capsuleCol.gameObject.SetActive(true);
 
         GetComponent<Collider>().isTrigger = true;
     }
