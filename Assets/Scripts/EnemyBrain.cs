@@ -54,7 +54,7 @@ public class EnemyBrain : MonoBehaviour
         initialPointToSee = transform.forward * 100f + transform.position;
         motion.Initialize(enemyData,agent);
         sensor.Initialize(enemyData);
-        enemyAttack.Initialize(enemyData);
+        enemyAttack.Initialize(enemyData, motion);
     }
 
     void Update()
