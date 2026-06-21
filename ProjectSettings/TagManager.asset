@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - AxePickUp
   - SwordPickUp
+  - Arrow
   layers:
   - Default
   - TransparentFX

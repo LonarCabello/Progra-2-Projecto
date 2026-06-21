@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill" at "2026-06-21T21:35:57.6454873Z"
 Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'es' Physical Memory: 7934 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-21T20:09:50Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill" at "2026-06-21T20:09:50.8152789Z"
+Date: 2026-06-21T21:35:57Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/guill/Desktop/UNICABA/Progra2/Progra-2-Projecto-1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63752
+49616
 -licensingIpc
 LicenseClient-guill
 -job-worker-count
@@ -67,14 +67,14 @@ C:/Users/guill/Desktop/UNICABA/Progra2/Progra-2-Projecto-1
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [15996]  Target information:
+Player connection [708]  Target information:
 
-Player connection [15996]  * "[IP] 172.16.31.50 [Port] 0 [Flags] 2 [Guid] 815396345 [EditorId] 815396345 [Version] 1048832 [Id] WindowsEditor(7,Guille_trabajo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [708]  * "[IP] 172.16.31.50 [Port] 0 [Flags] 2 [Guid] 3243628421 [EditorId] 3243628421 [Version] 1048832 [Id] WindowsEditor(7,Guille_trabajo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [15996]  * "[IP] 192.168.100.150 [Port] 0 [Flags] 2 [Guid] 815396345 [EditorId] 815396345 [Version] 1048832 [Id] WindowsEditor(7,Guille_trabajo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [708]  * "[IP] 192.168.100.150 [Port] 0 [Flags] 2 [Guid] 3243628421 [EditorId] 3243628421 [Version] 1048832 [Id] WindowsEditor(7,Guille_trabajo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [15996] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [15996] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [708] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [708] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 1
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -86,7 +86,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 631.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 702.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.11f1 (3000ef702840)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -98,210 +98,3 @@ Direct3D:
     Vendor:   Intel
     VRAM:     3967 MB
     Driver:   30.0.100.9864
-Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.080309 seconds.
-- Loaded All Assemblies, in 26.015 seconds
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.0'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-guill"
-[Licensing::IpcConnector] LicenseClient-guill channel disconnected successfully.
-Native extension for WindowsStandalone target not found
-[Licensing::IpcConnector] Error: Connection to channel: "LicenseClient-guill-6000.3.11" failed; code: "0x80000009"
-[Licensing::Module] Unknown status, channelName: "LicenseClient-guill-6000.3.11"
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Error: "Licensing::LicensingClient::SendReceiveAndDeserialize" was called, but Editor is not connected to Licensing Client
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-guill-6000.3.11"
-[Licensing::Module] Error: Licensing initialization failed after 88.04s
-Package Manager log level set to [2]
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 10.590 seconds
-Domain Reload Profiling: 36583ms
-	BeginReloadAssembly (16606ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (0ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (5ms)
-		CreateAndSetChildDomain (24ms)
-	RebuildCommonClasses (3156ms)
-	RebuildNativeTypeToScriptingClass (266ms)
-	initialDomainReloadingComplete (1073ms)
-	LoadAllAssembliesAndSetupDomain (4868ms)
-		LoadAssemblies (16294ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (4810ms)
-			TypeCache.Refresh (4779ms)
-				TypeCache.ScanAssembly (4512ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (10615ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (8969ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1151ms)
-			SetLoadedEditorAssemblies (77ms)
-			BeforeProcessingInitializeOnLoad (4046ms)
-			ProcessInitializeOnLoadAttributes (1625ms)
-			ProcessInitializeOnLoadMethodAttributes (1662ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (407ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (0ms)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-========================================================================
-Worker process is ready to serve import requests
-Import Worker Mode flag is 0x00
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Module] Error: The connection with the Unity Licensing Client has been lost. Attempting to reconnect.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill" at "2026-06-21T20:11:32.549382Z"
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.0'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-guill"
-[Licensing::IpcConnector] LicenseClient-guill channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill-6000.3.11" at "2026-06-21T20:12:01.2094925Z"
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.0+23225a6
-  Session Id:              52765fc346f74969bf515ba7e66b386a
-  Correlation Id:          4adeff5322669b7c7939182026a2b9ea
-  External correlation Id: 5336031151300809039
-  Machine Id:              EqgpHFVGoSAd3JZ+gyg2N29HO7Q=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-guill-6000.3.11" (connect: 0.06s, validation: 0.01s, handshake: 34.37s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill-6000.3.11-notifications" at "2026-06-21T20:12:35.6040713Z"
-[Licensing::Module] The re-connection attempt was successful.
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: 4673940305999-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-- Loaded All Assemblies, in 120.420 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 10.09 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 22.693 seconds
-Domain Reload Profiling: 142931ms
-	BeginReloadAssembly (83883ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5231ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (1908ms)
-	RebuildCommonClasses (1858ms)
-	RebuildNativeTypeToScriptingClass (130ms)
-	initialDomainReloadingComplete (2276ms)
-	LoadAllAssembliesAndSetupDomain (32083ms)
-		LoadAssemblies (26953ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11972ms)
-			TypeCache.Refresh (9661ms)
-				TypeCache.ScanAssembly (9260ms)
-			BuildScriptInfoCaches (2089ms)
-			ResolveRequiredComponents (148ms)
-	FinalizeReload (22701ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (15742ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (108ms)
-			BeforeProcessingInitializeOnLoad (3740ms)
-			ProcessInitializeOnLoadAttributes (10303ms)
-			ProcessInitializeOnLoadMethodAttributes (1246ms)
-			AfterProcessingInitializeOnLoad (305ms)
-			EditorAssembliesLoaded (21ms)
-		ExecutionOrderSort2 (3ms)
-		AwakeInstancesAfterBackupRestoration (519ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 9.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6593 unused Assets / (2.9 MB). Loaded Objects now: 7395.
-Memory consumption went from 140.0 MB to 137.1 MB.
-Total: 90.337700 ms (FindLiveObjects: 10.375100 ms CreateObjectMapping: 12.392500 ms MarkObjects: 38.859700 ms  DeleteObjects: 28.707900 ms)
-
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in 16.047 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 5.36 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 32.986 seconds
-Domain Reload Profiling: 48923ms
-	BeginReloadAssembly (4596ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (150ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (922ms)
-	RebuildCommonClasses (806ms)
-	RebuildNativeTypeToScriptingClass (165ms)
-	initialDomainReloadingComplete (487ms)
-	LoadAllAssembliesAndSetupDomain (9882ms)
-		LoadAssemblies (8276ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3912ms)
-			TypeCache.Refresh (202ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (3594ms)
-			ResolveRequiredComponents (81ms)
-	FinalizeReload (32987ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (26778ms)
-			LogAssemblyErrors (2ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (38ms)
-			BeforeProcessingInitializeOnLoad (1818ms)
-			ProcessInitializeOnLoadAttributes (15040ms)
-			ProcessInitializeOnLoadMethodAttributes (9844ms)
-			AfterProcessingInitializeOnLoad (26ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (39ms)
