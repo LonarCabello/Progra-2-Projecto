@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Downloads\TutorialInfo\Readme.cs" />
+    <Compile Include="Assets\Scripts\enemyHealt.cs" />
     <Compile Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Throwing Animations\Scripts\HumanThrowingAnimationsController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
   </ItemGroup>

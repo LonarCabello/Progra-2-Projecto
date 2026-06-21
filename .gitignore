@@ -1,0 +1,32 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.csproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+Assets/Plugins/
+
+# Build outputs
+*.apk
+*.unitypackage
+*.meta
+
+
+# .gitignore
