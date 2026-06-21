@@ -8,10 +8,12 @@ public class EnemyAttack : MonoBehaviour
     string projectileTag;
     EnemyData enemyData;
     bool inAttack;
+    EnemyMotion motion;
 
-    public void Initialize(EnemyData data)
+    public void Initialize(EnemyData data, EnemyMotion motion)
     {
         this.enemyData = data;
+        this.motion = motion;
         if(data.enemyType == EnemyType.Ranged)
         {
             pooler = ObjectPooler.Instance;
@@ -22,6 +24,7 @@ public class EnemyAttack : MonoBehaviour
             }
             projectileTag = "Arrow";
         }
+
     }
 
     public void Attack(Vector3 direction)
@@ -49,20 +52,19 @@ public class EnemyAttack : MonoBehaviour
     {
         GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, direction.normalized);
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        inAttack = false;
         // projectile.GetComponent<Rigidbody>().velocity = direction * pooler.pools.Find(pool => pool.tag == projectileTag).velocity;
     }
     private void golpear(Vector3 direction)
     {
         // Aquí iría la lógica para el ataque cuerpo a cuerpo, como aplicar daño al jugador si está dentro del rango de ataque.
         Debug.Log("Golpeando al jugador!");
+        inAttack = false;
     }
     private void atackSpectrum(Vector3 direction)
     {
-        // if(direction.sqrMagnitude > enemyData.attackRange * enemyData.attackRange / 4f)
-        // {
-        //     Vector3 desiation = (random.insideUnitSphere * enemyData.attackRange / 2f) + player.transform.position;
-        //     Debug.Log("Jugador fuera de rango para ataque espectro.");
-        //     return;
-        // }
+        // Pasar a modo tangible
+        motion.GoTo(transform.position + direction+transform.forward*3, true);
+        inAttack = false;
     }
 }

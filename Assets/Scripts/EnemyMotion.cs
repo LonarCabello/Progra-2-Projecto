@@ -33,9 +33,9 @@ public class EnemyMotion : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
     }
     
-    public void GoTo(Vector3 position)
+    public void GoTo(Vector3 position, bool spectrumInAttack = false)
     {
-        if(enemyData.enemyType == EnemyType.Spectrum)
+        if(!spectrumInAttack && enemyData.enemyType == EnemyType.Spectrum)
         {
             RotateTo(position);
             Vector3 direction = (position - transform.position)/2f;
