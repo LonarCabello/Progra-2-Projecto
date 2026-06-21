@@ -79,11 +79,9 @@ public class EnemySensor : MonoBehaviour
         {
             // Esfera para sonido suave (Caminata)
             Gizmos.color = Color.rebeccaPurple;
-            Gizmos.DrawWireSphere(transform.position, enemyData.walkHearingRange);
+            Gizmos.DrawWireSphere(transform.position, targetRB.linearVelocity.sqrMagnitude * 5f);
 
-            // Esfera para sonido fuerte (Correr)
-            Gizmos.color = Color.greenYellow;
-            Gizmos.DrawWireSphere(transform.position, enemyData.runHearingRange);
+           
 
             // // Esfera para alertas de mensajes
             Gizmos.color = Color.cyan;

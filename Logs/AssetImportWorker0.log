@@ -98,3 +98,146 @@ Direct3D:
     Vendor:   Intel
     VRAM:     3967 MB
     Driver:   30.0.100.9864
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.048000 seconds.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.0'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-guill"
+[Licensing::IpcConnector] LicenseClient-guill channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill-6000.3.11" at "2026-06-21T21:38:41.1721986Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.0+23225a6
+  Session Id:              ff699fff70284d46a4a9705ea033f4ce
+  Correlation Id:          db8d2c3cdde3c045db75f0355733858e
+  External correlation Id: 8846548363625746233
+  Machine Id:              EqgpHFVGoSAd3JZ+gyg2N29HO7Q=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-guill-6000.3.11" (connect: 0.00s, validation: 0.04s, handshake: 2.90s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-guill-6000.3.11-notifications" at "2026-06-21T21:38:44.119797Z"
+[Licensing::Module] Licensing Background thread has ended after 169.35s
+- Loaded All Assemblies, in 39.082 seconds
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.201 seconds
+Domain Reload Profiling: 46207ms
+	BeginReloadAssembly (28742ms)
+		ExecutionOrderSort (3ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (1177ms)
+	RebuildNativeTypeToScriptingClass (318ms)
+	initialDomainReloadingComplete (1852ms)
+	LoadAllAssembliesAndSetupDomain (6898ms)
+		LoadAssemblies (28386ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6843ms)
+			TypeCache.Refresh (6776ms)
+				TypeCache.ScanAssembly (5708ms)
+			BuildScriptInfoCaches (3ms)
+			ResolveRequiredComponents (44ms)
+	FinalizeReload (7220ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5989ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (783ms)
+			SetLoadedEditorAssemblies (127ms)
+			BeforeProcessingInitializeOnLoad (1588ms)
+			ProcessInitializeOnLoadAttributes (1948ms)
+			ProcessInitializeOnLoadMethodAttributes (1507ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (36ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673940305999-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in 27.851 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 54.45 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 113.499 seconds
+Domain Reload Profiling: 140974ms
+	BeginReloadAssembly (3492ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (196ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (470ms)
+	RebuildCommonClasses (557ms)
+	RebuildNativeTypeToScriptingClass (274ms)
+	initialDomainReloadingComplete (642ms)
+	LoadAllAssembliesAndSetupDomain (22503ms)
+		LoadAssemblies (8448ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15564ms)
+			TypeCache.Refresh (12547ms)
+				TypeCache.ScanAssembly (12385ms)
+			BuildScriptInfoCaches (2890ms)
+			ResolveRequiredComponents (108ms)
+	FinalizeReload (113506ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (81709ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (2498ms)
+			BeforeProcessingInitializeOnLoad (24713ms)
+			ProcessInitializeOnLoadAttributes (52315ms)
+			ProcessInitializeOnLoadMethodAttributes (1891ms)
+			AfterProcessingInitializeOnLoad (269ms)
+			EditorAssembliesLoaded (18ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (275ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.44 seconds
+Refreshing native plugins compatible for Editor in 16.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6593 unused Assets / (10.0 MB). Loaded Objects now: 7395.
+Memory consumption went from 139.9 MB to 129.9 MB.
+Total: 180.518500 ms (FindLiveObjects: 14.981500 ms CreateObjectMapping: 7.903100 ms MarkObjects: 97.478800 ms  DeleteObjects: 60.151800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 543957.945116 seconds.
+  path: Assets/Personajes/Anim/Sword and Shield Pack/sword and shield attack.fbx
+  artifactKey: Guid(c3e6befac4bd9aa408756c90de517911) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Personajes/Anim/Sword and Shield Pack/sword and shield attack.fbx using Guid(c3e6befac4bd9aa408756c90de517911) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)
