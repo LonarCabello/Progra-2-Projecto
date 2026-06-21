@@ -34,6 +34,11 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] private float attackDuration = 1.15f;
     private bool isAttacking;
 
+    [Header("Sistema de Combos")]
+    private int comboStep = 0;
+    private bool canQueueCombo = false;
+    private bool comboQueue = false;    
+
     [Header("Cambio de Armas")]
     [SerializeField] private GameObject battleAxe;
     [SerializeField] private GameObject sword;
@@ -121,11 +126,11 @@ public class PlayerMov : MonoBehaviour
         }
 
         //Ataque Input
-        if (isGrounded && Input.GetMouseButtonDown(0) && !isAttacking)
+        if (isGrounded && Input.GetMouseButtonDown(0))
         {
             Debug.Log("Atacando");
             if (currentWeapon == WeaponType.None) return;
-            Attack();
+            StartComboSistem();
         }
 
         //Hacha Arrojadiza Input
@@ -223,29 +228,7 @@ public class PlayerMov : MonoBehaviour
             movement.z * speed
         );
     }
-    // Sistema de ataque
-    void Attack()
-    {
-        isAttacking = true;
 
-        // DIRECCIÓN DE LA CÁMARA
-        Vector3 attackDirection = cameraTransform.forward;
-        attackDirection.y = 0f;
-
-        // ROTAR PERSONAJE HACIA DONDE MIRA LA CÁMARA
-        transform.rotation = Quaternion.LookRotation(attackDirection);
-
-        // ACTIVAR ANIMACIÓN
-        animator.SetTrigger("Attack");
-
-        // TERMINAR ATAQUE
-        Invoke(nameof(EndAttack), attackDuration);
-    }
-
-    void EndAttack()
-    {
-        isAttacking = false;
-    }
 
     //Activar el hitbox desede animaciones
 
@@ -494,4 +477,109 @@ public class PlayerMov : MonoBehaviour
         }
     }
 
+    private void StartComboSistem()
+    {
+        if (!isAttacking)
+        {
+            StartCombo();
+            return;
+        }
+
+        if (canQueueCombo)
+        {
+            comboQueue = true;
+        }
+
+    }
+
+    private void StartCombo()
+    {
+        Debug.Log("comenzo el combo");
+        isAttacking = true;
+
+        comboStep = 1;
+
+        // DIRECCIÓN DE LA CÁMARA
+        Vector3 attackDirection = cameraTransform.forward;
+        attackDirection.y = 0f;
+
+        // ROTAR PERSONAJE HACIA DONDE MIRA LA CÁMARA
+        transform.rotation = Quaternion.LookRotation(attackDirection);
+
+        animator.SetInteger("ComboStep", comboStep);
+        animator.SetTrigger("Attack");
+    }
+
+
+    public void OpenComboWindow()
+    {
+        Debug.Log("se abrio ventana de combo");
+        canQueueCombo = true;
+    }
+
+    public void CloseComboWindow()
+    {
+        Debug.Log("se cerro ventana de combo");
+        canQueueCombo = false;
+
+        if (comboQueue)
+        {
+            ContinueCombo();
+        }
+        else
+        {
+            EndCombo();
+        }
+    }
+
+    private void ContinueCombo()
+    {
+        Debug.Log("combo continua");
+        comboQueue = false;
+
+        comboStep++;
+
+        // DIRECCIÓN DE LA CÁMARA
+        Vector3 attackDirection = cameraTransform.forward;
+        attackDirection.y = 0f;
+
+        // ROTAR PERSONAJE HACIA DONDE MIRA LA CÁMARA
+        transform.rotation = Quaternion.LookRotation(attackDirection);
+
+        int maxCombo = GetMaxCombo();
+
+        if (comboStep > maxCombo)
+        {
+            EndCombo();
+            return;
+        }
+
+        animator.SetInteger("ComboStep", comboStep);
+        animator.SetTrigger("Attack");
+    }
+
+    private void EndCombo()
+    {
+        Debug.Log("Combo finalizado");
+        comboQueue = false;
+        canQueueCombo = false;
+
+        comboStep = 0;
+
+        isAttacking = false;
+    }
+
+    private int GetMaxCombo()
+    {
+        switch(currentWeapon)
+        {
+            case WeaponType.BattleAxe:
+                return 3;
+
+            case WeaponType.Sword:
+                return 3;
+        }
+
+        return 1;
+    }
 }
