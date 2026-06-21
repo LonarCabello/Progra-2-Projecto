@@ -18,9 +18,11 @@ public class PlayerMov : MonoBehaviour
 
     private bool isGrounded = false;
 
-
     private bool isRunning = false;
+    [Header("Block")]
+    [SerializeField] private GameObject shieldObj;
     private bool isBlocking = false;
+
 
     [Header("Movimiento Camara")]
     public Transform cameraTransform;
@@ -94,7 +96,7 @@ public class PlayerMov : MonoBehaviour
         //Block
         if (Input.GetMouseButton(1))
         {
-            if (!isRunning)
+            if (!isRunning && !isAttacking)
             {
                 isBlocking = true;
                 animator.SetBool("isBlocking", true);
