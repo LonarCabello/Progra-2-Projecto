@@ -9,6 +9,13 @@ public class EnemyAttack : MonoBehaviour
     EnemyData enemyData;
     bool inAttack;
     EnemyMotion motion;
+    Animator anim;
+
+
+    private void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     public void Initialize(EnemyData data, EnemyMotion motion)
     {
@@ -34,7 +41,7 @@ public class EnemyAttack : MonoBehaviour
         switch (enemyData.enemyType)
         {
             case EnemyType.Ranged:
-                Shot(direction);
+                anim.SetTrigger("Shoot");
                 break;
             case EnemyType.Melee:
                 golpear(direction);
@@ -47,13 +54,17 @@ public class EnemyAttack : MonoBehaviour
                 break;
         }
     }
-    private void Shot(Vector3 direction)
+    public void Shot()
     {
-        GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, direction.normalized);
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, player.transform.position - transform.position);
         inAttack = false;
         // projectile.GetComponent<Rigidbody>().velocity = direction * pooler.pools.Find(pool => pool.tag == projectileTag).velocity;
     }
+
+    //public void ShootinAnimation()
+    //{
+    //    Shot(direction);
+    //}
     private void golpear(Vector3 direction)
     {
         // Aquí iría la lógica para el ataque cuerpo a cuerpo, como aplicar daño al jugador si está dentro del rango de ataque.

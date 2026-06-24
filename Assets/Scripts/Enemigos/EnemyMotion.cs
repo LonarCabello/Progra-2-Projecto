@@ -30,7 +30,8 @@ public class EnemyMotion : MonoBehaviour
     
     public void Stop()
     {
-        rb.linearVelocity = Vector3.zero;
+        agent.isStopped = true;
+        //rb.linearVelocity = Vector3.zero;
     }
     
     public void GoTo(Vector3 position, bool spectrumInAttack = false)

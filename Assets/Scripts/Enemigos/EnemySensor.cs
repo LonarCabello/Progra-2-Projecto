@@ -36,16 +36,23 @@ public class EnemySensor : MonoBehaviour
         RaycastHit hit;
         Vector3 direction = target.position - transform.position;
         bool inAngleH = Vector3.Angle(transform.forward, new Vector3(direction.x, 0, direction.z)) <= enemyData.angleVisionH;
-        Vector3 aux = (transform.forward * Mathf.Sqrt(Mathf.Pow(direction.magnitude, 2) - Mathf.Pow(direction.y, 2))) + (Vector3.up * direction.y);
+        Vector3 aux = (transform.forward * Mathf.Sqrt(Mathf.Max(1, direction.sqrMagnitude - Mathf.Pow(direction.y, 2)))) + (Vector3.up * direction.y);
         bool inAngleV = Vector3.Angle(transform.forward, aux) <= enemyData.angleVisionV;
         if (inAngleH && inAngleV)
         {
             if(Physics.Raycast(transform.position, direction,out hit, enemyData.visionRange))
             {
+                Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.orange);
+                if ( hit.transform != target)
+                {
+                    Debug.Log($"viendo a {hit.transform.name}");
+                }
+                Debug.Log($"viendo a {target}");
                 return hit.transform == target;
             }
+            Debug.Log("esta dentro de los angulos");
         }
-
+        
         return false;
     }
 
@@ -55,18 +62,20 @@ public class EnemySensor : MonoBehaviour
         float sqrDistance = direction.sqrMagnitude;
         if(target.tag == "Player")
         {
-            if(sqrDistance <= targetRB.linearVelocity.sqrMagnitude * 5f)
+            /*
+            if(sqrDistance <= targetRB.linearVelocity.sqrMagnitude * 2f)
             {
                 return true;
             }
-            // if(sqrDistance <= enemyData.walkHearingRange * enemyData.walkHearingRange && targetRB.linearVelocity.sqrMagnitude > 1f) // 8*8= 64 , 4 
-            // {
-            //     return true;
-            // }
-            // else if(sqrDistance <= enemyData.runHearingRange * enemyData.runHearingRange && targetRB.linearVelocity.sqrMagnitude >= 4f) // 15*15= 225 , 6,5
-            // {
-            //     return true;
-            // }
+            */
+            if(sqrDistance <= enemyData.walkHearingRange * enemyData.walkHearingRange && targetRB.linearVelocity.sqrMagnitude > 1f) // 8*8= 64 , 4 
+            {
+                return true;
+            }
+            else if(sqrDistance <= enemyData.runHearingRange * enemyData.runHearingRange && targetRB.linearVelocity.sqrMagnitude >= 4f) // 15*15= 225 , 6,5
+            {
+                return true;
+            }
             return false;
         }else
         {
@@ -92,11 +101,11 @@ public class EnemySensor : MonoBehaviour
             // // Línea para visión
             
             Gizmos.color = !canSeeTarget(target) ? Color.green : Color.red;
-            
+
             Gizmos.DrawLine(transform.position, transform.position + transform.forward * enemyData.visionRange);
             Matrix4x4 oldMatrix = Gizmos.matrix;
             Gizmos.matrix = transform.localToWorldMatrix;
-            Gizmos.DrawFrustum(Vector3.zero, enemyData.angleVisionH*2, enemyData.visionRange, 0.1f, 1f);
+            Gizmos.DrawFrustum(Vector3.zero, enemyData.angleVisionH * 2, enemyData.visionRange, 0.1f, 1f);
             Gizmos.matrix = oldMatrix;
         }
 

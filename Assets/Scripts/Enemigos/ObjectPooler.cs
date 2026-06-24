@@ -84,7 +84,7 @@ public class ObjectPooler : MonoBehaviour
         // Activarlo y reubicarlo.
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = firePoint.transform.position;
-        objectToSpawn.transform.up = direction;
+        objectToSpawn.transform.forward = direction;
         float v = pools.Find(p => p.tag == tag).velocity;
         rb.linearVelocity = direction * v;
         return objectToSpawn;

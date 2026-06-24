@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Player\ThrowAxe.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Downloads\TutorialInfo\Readme.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\ArcherEventAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemigos\AlertEventManager.cs" />
     <Compile Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Throwing Animations\Scripts\HumanThrowingAnimationsController.cs" />
   </ItemGroup>

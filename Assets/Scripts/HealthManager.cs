@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 03 / 06 / 2026
+ * Title        : HealthManager
+ * Description  : Manager de vida de jugador/enemigos.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class HealthManager : MonoBehaviour
@@ -15,8 +25,7 @@ public class HealthManager : MonoBehaviour
     private Animator anim;
 
     void Start()
-    {
-        anim = GetComponent<Animator>();    
+    {  
         currentHealth = maxHealth;
     }
 
@@ -37,14 +46,23 @@ public class HealthManager : MonoBehaviour
 
         if (this.CompareTag("Player"))
         {
+            anim = GetComponent<Animator>();
             PlayerMov playerMov = GetComponent<PlayerMov>();
             if (playerMov.isBlocking == true)
             {
                 Debug.Log("bloqueando, no recibe daño");
                 anim.SetTrigger("TakenDamage");
+                playerMov.isAttacking = false;
                 return;
             }
+            playerMov.isAttacking = false;
         }
+
+        if (this.CompareTag("Enemy"))
+        {
+            anim = GetComponentInChildren<Animator>();
+        }
+
         currentHealth -= damage;
 
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);

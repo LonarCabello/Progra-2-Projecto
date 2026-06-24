@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 28 / 05 / 2026
+ * Title        : PlayerMov
+ * Description  : Todas las acciones del jugador.
+ * =============<< ********* >>=============
+ */
+
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -20,7 +30,7 @@ public class PlayerMov : MonoBehaviour
 
     private bool isRunning = false;
     [Header("Block")]
-    [SerializeField] private GameObject shieldObj;
+    //[SerializeField] private GameObject shieldObj;
     public bool isBlocking = false;
 
 
@@ -34,7 +44,7 @@ public class PlayerMov : MonoBehaviour
 
     [Header("Sistema de Ataque")]
     [SerializeField] private float attackDuration = 1.15f;
-    private bool isAttacking;
+    public bool isAttacking;
 
     [Header("Sistema de Combos")]
     private int comboStep = 0;
@@ -101,14 +111,14 @@ public class PlayerMov : MonoBehaviour
             {
                 isBlocking = true;
                 animator.SetBool("isBlocking", true);
-                shieldObj.GetComponentInChildren<BoxCollider>().enabled = true;
+                //shieldObj.GetComponentInChildren<BoxCollider>().enabled = true;
             }
         }
         else
         {
             isBlocking = false;
             animator.SetBool("isBlocking", false);
-            shieldObj.GetComponentInChildren<BoxCollider>().enabled = false;
+            //shieldObj.GetComponentInChildren<BoxCollider>().enabled = false;
         }
 
         //Recoger Arma
@@ -131,7 +141,7 @@ public class PlayerMov : MonoBehaviour
         }
 
         //Ataque Input
-        if (isGrounded && Input.GetMouseButtonDown(0))
+        if (isGrounded && Input.GetMouseButtonDown(0) && !isBlocking)
         {
             Debug.Log("Atacando");
             if (currentWeapon == WeaponType.None) return;

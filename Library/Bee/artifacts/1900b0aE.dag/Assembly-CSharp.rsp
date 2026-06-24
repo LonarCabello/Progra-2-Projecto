@@ -465,6 +465,7 @@
 "Assets/Kevin Iglesias/Human Animations/Scripts/SpineProxy.cs"
 "Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Throwing Animations/Scripts/HumanThrowingAnimationsController.cs"
 "Assets/Scripts/Enemigos/AlertEventManager.cs"
+"Assets/Scripts/Enemigos/ArcherEventAnimation.cs"
 "Assets/Scripts/Enemigos/EnemyAttack.cs"
 "Assets/Scripts/Enemigos/EnemyBrain.cs"
 "Assets/Scripts/Enemigos/EnemyData.cs"
