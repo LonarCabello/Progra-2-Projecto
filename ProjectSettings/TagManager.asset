@@ -9,14 +9,15 @@ TagManager:
   - Enemy
   - AxePickUp
   - SwordPickUp
+  - Arrow
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

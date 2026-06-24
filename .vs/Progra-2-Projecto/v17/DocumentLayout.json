@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GithubProjects\\Progra-2-Projecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|d:\\githubprojects\\progra-2-projecto\\assets\\scripts\\player\\playermov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\enemigos\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemigos\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\enemigos\\projectilebehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemigos\\projectilebehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\player\\weapondamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\weapondamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\enemigos\\enemybrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemigos\\enemybrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\enemigos\\enemymotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemigos\\enemymotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|D:\\GithubProjects\\Progra-2-Projecto\\assets\\scripts\\enemigos\\enemysensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB042CB2-8D30-C1D4-4AEC-5426972EF8BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemigos\\enemysensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeaponDamage.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Player\\WeaponDamage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\WeaponDamage.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Player\\WeaponDamage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\WeaponDamage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T16:07:25.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthManager.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\HealthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthManager.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\HealthManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthManager.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T16:05:36.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectileBehaviourScript.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\ProjectileBehaviourScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemigos\\ProjectileBehaviourScript.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\ProjectileBehaviourScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemigos\\ProjectileBehaviourScript.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T16:04:01.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnemySensor.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemySensor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemigos\\EnemySensor.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemySensor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemigos\\EnemySensor.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:41:15.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyMotion.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemyMotion.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemigos\\EnemyMotion.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemyMotion.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemigos\\EnemyMotion.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA5wDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:40:37.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyBrain.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemyBrain.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemigos\\EnemyBrain.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemyBrain.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemigos\\EnemyBrain.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwBMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:39:56.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyAttack.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemyAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemigos\\EnemyAttack.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Enemigos\\EnemyAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemigos\\EnemyAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:39:16.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMov.cs",
+              "DocumentMoniker": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Player\\PlayerMov.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMov.cs",
+              "ToolTip": "D:\\GithubProjects\\Progra-2-Projecto\\Assets\\Scripts\\Player\\PlayerMov.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMov.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T21:54:02.032Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

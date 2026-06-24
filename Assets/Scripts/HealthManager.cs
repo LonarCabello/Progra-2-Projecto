@@ -35,6 +35,16 @@ public class HealthManager : MonoBehaviour
             return;
         }
 
+        if (this.CompareTag("Player"))
+        {
+            PlayerMov playerMov = GetComponent<PlayerMov>();
+            if (playerMov.isBlocking == true)
+            {
+                Debug.Log("bloqueando, no recibe daño");
+                anim.SetTrigger("TakenDamage");
+                return;
+            }
+        }
         currentHealth -= damage;
 
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
