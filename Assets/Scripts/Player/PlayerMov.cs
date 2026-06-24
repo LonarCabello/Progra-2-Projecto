@@ -21,7 +21,7 @@ public class PlayerMov : MonoBehaviour
     private bool isRunning = false;
     [Header("Block")]
     [SerializeField] private GameObject shieldObj;
-    private bool isBlocking = false;
+    public bool isBlocking = false;
 
 
     [Header("Movimiento Camara")]
