@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   enemyType: 0
   maxHealth: 100
-  speed: 5
+  speed: 4.5
   damage: 20
-  attackRange: 1.5
+  attackRange: 4.2
   attackCooldown: 1.5
-  visionRange: 10
+  visionRange: 20
   walkHearingRange: 0
   runHearingRange: 0
   hearingMessageRange: 10
-  angleVisionH: 45
-  angleVisionV: 45
+  angleVisionH: 30
+  angleVisionV: 30
   frecuencySerpenteo: 0

@@ -56,6 +56,7 @@ public class PlayerMov : MonoBehaviour
 
 
     [Header("Hachas Arrojadizas")]
+    private bool canThrowAxe = true;
     private bool isThrowingHold = false;
     [SerializeField] private GameObject throwAxePrefab;
     [SerializeField] Transform throwPoint;
@@ -100,12 +101,14 @@ public class PlayerMov : MonoBehaviour
             {
                 isBlocking = true;
                 animator.SetBool("isBlocking", true);
+                shieldObj.GetComponentInChildren<BoxCollider>().enabled = true;
             }
         }
         else
         {
             isBlocking = false;
             animator.SetBool("isBlocking", false);
+            shieldObj.GetComponentInChildren<BoxCollider>().enabled = false;
         }
 
         //Recoger Arma
@@ -139,7 +142,10 @@ public class PlayerMov : MonoBehaviour
         if (Input.GetMouseButtonDown(2) && !isRunning && !isAttacking)
         {
             if (currentAxes <= 0) return;
-            ThrowAxeHold();
+            if (canThrowAxe)
+            {
+                ThrowAxeHold();
+            }
             
         }
         if (Input.GetMouseButtonUp(2))
@@ -583,5 +589,15 @@ public class PlayerMov : MonoBehaviour
         }
 
         return 1;
+    }
+
+    public void CanthrowAxeTrue()
+    {
+        canThrowAxe = true;
+    }
+
+    public void CanthrowAxeFalse()
+    {
+        canThrowAxe = false;
     }
 }

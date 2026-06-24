@@ -64,8 +64,8 @@
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemySensor.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyAttack.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMov.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyBrain.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMov.cs" />
     <Compile Include="Assets\Scripts\Player\WeaponDamage.cs" />
     <Compile Include="Assets\Scripts\Enemigos\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyMotion.cs" />

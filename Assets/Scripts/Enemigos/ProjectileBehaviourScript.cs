@@ -21,10 +21,25 @@ public class ProjectileBehaviourScript : MonoBehaviour
         pooler.ReturnToPool(gameObject);
     }
 
+    /*
     void OnCollisionEnter(Collision collision)
     {
         // Insertar lógica de daño al player
         Debug.Log("Hit " + collision.gameObject.name);
+        pooler.ReturnToPool(gameObject);
+    }
+    */
+
+    private void OnTriggerEnter(Collider col)
+    {
+        // Insertar lógica de daño al player
+        if (col.CompareTag("Player"))
+        {
+            HealthManager health = col.GetComponent<HealthManager>();
+            health.TakeDamage(damage);
+        }
+
+        Debug.Log("Hit " + col.gameObject.name);
         pooler.ReturnToPool(gameObject);
     }
 }
