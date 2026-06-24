@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 3
   tags:
   - tag
+  - Ground
+  - Enemy
+  - AxePickUp
+  - SwordPickUp
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
