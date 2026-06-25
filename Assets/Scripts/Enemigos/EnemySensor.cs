@@ -14,24 +14,20 @@ using UnityEngine;
 
 public class EnemySensor : MonoBehaviour
 {
-    [SerializeField]
+    
     Transform target;
-    // const float visionRange = 40f;
-    // const float angleVisionH = 45f;
-    // const float angleVisionV = 45f;
-    // const float walkHearingRange = 8f;
-    // const float runHearingRange = 15f;
-    // const float hearingMessageRange = 10f;
+    
     Rigidbody targetRB;
     EnemyData enemyData;
     
-    public void Initialize(EnemyData data)
+    public void Initialize(EnemyData data,Transform target)
     {
+        this.target = target;
         targetRB = target.GetComponent<Rigidbody>();
         enemyData = data;
     }
 
-    public bool canSeeTarget(Transform target)
+    public bool canSeeTarget()
     {
         RaycastHit hit;
         Vector3 direction = target.position - transform.position;
