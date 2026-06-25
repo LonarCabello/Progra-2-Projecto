@@ -22,6 +22,9 @@ public class HealthManager : MonoBehaviour
 
     public bool IsDead { get; private set; }
 
+    private EnemyBrain enemyBrain;
+
+
     private Animator anim;
 
     void Start()
@@ -61,6 +64,7 @@ public class HealthManager : MonoBehaviour
         if (this.CompareTag("Enemy"))
         {
             anim = GetComponentInChildren<Animator>();
+            enemyBrain = GetComponent<EnemyBrain>();
         }
 
         currentHealth -= damage;
@@ -102,6 +106,11 @@ public class HealthManager : MonoBehaviour
         anim.SetTrigger("Death");
 
         Debug.Log(gameObject.name + " murió");
+
+        if (this.CompareTag("Enemy"))
+        {
+            enemyBrain.Muerto();
+        }
     }
 
     //Devuelve la vida actual

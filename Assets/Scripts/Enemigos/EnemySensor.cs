@@ -96,7 +96,7 @@ public class EnemySensor : MonoBehaviour
 
             // // Línea para visión
             
-            Gizmos.color = !canSeeTarget(target) ? Color.green : Color.red;
+            Gizmos.color = !canSeeTarget() ? Color.green : Color.red;
 
             Gizmos.DrawLine(transform.position, transform.position + transform.forward * enemyData.visionRange);
             Matrix4x4 oldMatrix = Gizmos.matrix;

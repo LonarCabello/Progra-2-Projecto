@@ -40,12 +40,15 @@ public class EnemyBrain : MonoBehaviour
     Queue<Vector3> searchPoints = new Queue<Vector3>();
     NavMeshAgent agent;
     [SerializeField] EnemyData enemyData;
+    Animator anim;
+
 
     // gameObject sin collider para marcar puntos de búsqueda
     [SerializeField] GameObject refe;
     EnemyAttack enemyAttack;
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         motion = GetComponent<EnemyMotion>();
         sensor = GetComponent<EnemySensor>();
         agent = GetComponent<NavMeshAgent>();
@@ -66,21 +69,26 @@ public class EnemyBrain : MonoBehaviour
         switch(currentState)
         {
             case State.Idle:
+                anim.SetBool("IsMoving", false);
                 UpdateIdle();
                 break;
             case State.Patrol:
+                anim.SetBool("IsMoving", true);
                 UpdatePatrol();
                 break;
             case State.Alert:
                 UpdateAlert();
                 break;
             case State.Chase:
+                anim.SetBool("IsMoving", true);
                 UpdateChase();
                 break;
             case State.Search:
+                anim.SetBool("IsMoving", true);
                 UpdateSearch();
                 break;
             case State.Attack:
+                anim.SetBool("IsMoving", false);
                 UpdateAttack();
                 break;
         }
@@ -92,7 +100,7 @@ public class EnemyBrain : MonoBehaviour
         {
             seeCoroutine = StartCoroutine(See(45f,initialPointToSee));
         }
-        if (sensor.canSeeTarget(player))
+        if (sensor.canSeeTarget())
         {
             Debug.Log("Target detected, switching to Chase state.");
             changeState( State.Chase);
@@ -108,7 +116,7 @@ public class EnemyBrain : MonoBehaviour
         // Implementación del comportamiento de patrulla
     }
     void UpdateAlert(){
-        if (sensor.canSeeTarget(player))
+        if (sensor.canSeeTarget())
         {
             Debug.Log("Target detected, switching to Chase state.");
             changeState( State.Chase);
@@ -117,7 +125,7 @@ public class EnemyBrain : MonoBehaviour
     }
     void UpdateChase(){
         motion.RotateTo(player.position);
-        if (!sensor.canSeeTarget(player))
+        if (!sensor.canSeeTarget())
         {
             Debug.Log("Lost sight and sound of target, switching to Search state.");
             changeState(State.Search);
@@ -136,7 +144,7 @@ public class EnemyBrain : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         motion.Stop();
         agent.ResetPath();
-        if(!sensor.canSeeTarget(player))
+        if(!sensor.canSeeTarget())
         {
             changeState(State.Search);
             RefreshSearchPoints(player.transform);
@@ -156,10 +164,11 @@ public class EnemyBrain : MonoBehaviour
         {
             timeLastAttack = Time.time;
             enemyAttack.Attack(direction);
+            Debug.Log("quiere atacar archer");
         }
     }
     void UpdateSearch(){
-        if (sensor.canSeeTarget(player))
+        if (sensor.canSeeTarget())
         {
             Debug.Log("Target detected, switching to Chase state.");
             changeState(State.Chase);
@@ -216,6 +225,12 @@ public class EnemyBrain : MonoBehaviour
         searchPoints.Enqueue(pointToSearch.position);
         searchPoints.Enqueue(initialPosition);
     }
+
+    public void Muerto()
+    {
+        changeState(State.Dead);
+    }
+
     void changeState(State newState)
     {
         if(seeCoroutine != null)

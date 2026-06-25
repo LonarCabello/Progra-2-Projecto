@@ -39,6 +39,7 @@ public class EnemyAttack : MonoBehaviour
         {
             case EnemyType.Ranged:
                 anim.SetTrigger("Shoot");
+                inAttack = false;
                 break;
             case EnemyType.Melee:
                 golpear(direction);
@@ -54,7 +55,6 @@ public class EnemyAttack : MonoBehaviour
     public void Shot()
     {
         GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, player.position - transform.position);
-        inAttack = false;
         // projectile.GetComponent<Rigidbody>().velocity = direction * pooler.pools.Find(pool => pool.tag == projectileTag).velocity;
     }
 
