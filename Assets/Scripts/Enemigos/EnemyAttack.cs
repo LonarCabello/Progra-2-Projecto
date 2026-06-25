@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    Transform player;
     ObjectPooler pooler;
     [SerializeField] private GameObject firePoint;
     string projectileTag;
@@ -12,15 +12,12 @@ public class EnemyAttack : MonoBehaviour
     Animator anim;
 
 
-    private void Start()
+    public void Initialize(EnemyData data, EnemyMotion motion, Transform player)
     {
         anim = GetComponentInChildren<Animator>();
-    }
-
-    public void Initialize(EnemyData data, EnemyMotion motion)
-    {
         this.enemyData = data;
         this.motion = motion;
+        this.player = player;
         if(data.enemyType == EnemyType.Ranged)
         {
             pooler = ObjectPooler.Instance;
@@ -56,7 +53,7 @@ public class EnemyAttack : MonoBehaviour
     }
     public void Shot()
     {
-        GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, player.transform.position - transform.position);
+        GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, player.position - transform.position);
         inAttack = false;
         // projectile.GetComponent<Rigidbody>().velocity = direction * pooler.pools.Find(pool => pool.tag == projectileTag).velocity;
     }
