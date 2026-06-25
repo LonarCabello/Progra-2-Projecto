@@ -10,6 +10,7 @@ TagManager:
   - AxePickUp
   - SwordPickUp
   - Arrow
+  - FuenteDePociones
   layers:
   - Default
   - TransparentFX

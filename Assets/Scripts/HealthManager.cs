@@ -24,7 +24,6 @@ public class HealthManager : MonoBehaviour
 
     private EnemyBrain enemyBrain;
 
-
     private Animator anim;
 
     void Start()
@@ -73,7 +72,7 @@ public class HealthManager : MonoBehaviour
 
         anim.SetTrigger("TakenDamage");
 
-        Debug.Log(gameObject.name + " recibió " + damage + " de daño");
+        Debug.Log(gameObject.name + " recibió " + damage + " de daño. Ahora tiene: " + currentHealth + " puntos de vida ");
 
         canTakeDamage = false;
         Invoke(nameof(ResetDamageCoolDown), damageCoolDown);
@@ -84,14 +83,28 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void Heal(int amount)
+    public void HealTrigger()
+    {
+        if (IsDead) return;
+
+        Debug.Log("por curarse");
+        anim.SetTrigger("Heal");
+
+    }
+
+    public void Heal()
     {
         if (IsDead)
             return;
 
-        currentHealth += amount;
+        //currentHealth += 50;
 
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth = Mathf.Clamp(currentHealth + 50, 0, maxHealth);
+
+        Debug.Log(gameObject.name + " Se curo " + 50 + " de vida. Ahora tiene: " + currentHealth + " puntos de vida ");
+
+        PlayerMov playerMov = GetComponent<PlayerMov>();
+        playerMov.isHealing = false;
     }
 
     private void ResetDamageCoolDown()
@@ -110,6 +123,7 @@ public class HealthManager : MonoBehaviour
         if (this.CompareTag("Enemy"))
         {
             enemyBrain.Muerto();
+
         }
     }
 

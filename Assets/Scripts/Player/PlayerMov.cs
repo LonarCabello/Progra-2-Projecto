@@ -32,7 +32,15 @@ public class PlayerMov : MonoBehaviour
     [Header("Block")]
     //[SerializeField] private GameObject shieldObj;
     public bool isBlocking = false;
+    [SerializeField] private GameObject shieldObj;
 
+    //Heal Player
+    [Header("Healing Potion")]
+    [SerializeField] private int maxPotions;
+    [SerializeField] private int currentPotions;
+    private HealthManager healMan;
+    [SerializeField] private GameObject potionObj;
+    public bool isHealing;
 
     [Header("Movimiento Camara")]
     public Transform cameraTransform;
@@ -79,10 +87,12 @@ public class PlayerMov : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        healMan = GetComponent<HealthManager>();
     }
 
     private void Start()
     {
+        currentPotions = maxPotions;
         currentWeapon = WeaponType.None;
     }
 
@@ -107,7 +117,7 @@ public class PlayerMov : MonoBehaviour
         //Block
         if (Input.GetMouseButton(1))
         {
-            if (!isRunning && !isAttacking)
+            if (!isRunning && !isAttacking && !isHealing)
             {
                 isBlocking = true;
                 animator.SetBool("isBlocking", true);
@@ -133,17 +143,24 @@ public class PlayerMov : MonoBehaviour
             DropWeapon();
         }
 
-        //TakeDamage (Borrar) para probar el hit al jugador.
-        if (Input.GetKeyDown(KeyCode.H))
+        //Healing Potion
+        if (Input.GetKeyDown(KeyCode.H) && healMan.GetCurrentHealth() != healMan.maxHealth && !isBlocking && !isAttacking)
         {
-            HealthManager healMan = GetComponent<HealthManager>();
-            healMan.TakeDamage(20);
+
+            isHealing = true;
+            if (currentPotions > 0)
+            {
+                ShowPotion();
+                healMan.HealTrigger();
+                currentPotions -= 1;
+                Debug.Log($"curandose. quedan: {currentPotions} pociones.");
+            }
         }
 
         //Ataque Input
         if (isGrounded && Input.GetMouseButtonDown(0) && !isBlocking)
         {
-            Debug.Log("Atacando");
+            //Debug.Log("Atacando");
             if (currentWeapon == WeaponType.None) return;
             StartComboSistem();
         }
@@ -428,6 +445,10 @@ public class PlayerMov : MonoBehaviour
         {
             nearbyWeapon = col.gameObject;
         }
+        if (col.CompareTag("FuenteDePociones"))
+        {
+            FillPotions();
+        }
     }
 
     private void OnTriggerExit(Collider col)
@@ -608,5 +629,22 @@ public class PlayerMov : MonoBehaviour
     public void CanthrowAxeFalse()
     {
         canThrowAxe = false;
+    }
+
+    public void ShowPotion()
+    {
+        shieldObj.SetActive(false);
+        potionObj.SetActive(true);
+    }
+    public void ShowShield()
+    {
+        shieldObj.SetActive(true);
+        potionObj.SetActive(false);
+    }
+    public void FillPotions()
+    {
+        if (currentPotions == maxPotions) return;
+        currentPotions = maxPotions;
+        Debug.Log("Las pociones han sido llenadas. tienes: " + currentPotions + " pociones");
     }
 }

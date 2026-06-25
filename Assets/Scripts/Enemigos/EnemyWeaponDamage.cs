@@ -30,6 +30,9 @@ public class EnemyWeaponDamage : MonoBehaviour
     }
     public void DisableHitBox()
     {
-        boxCol.enabled = false;
+        if (this.boxCol != null)
+        {
+            boxCol.enabled = false;
+        }
     }
 }

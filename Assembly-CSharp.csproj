@@ -84,7 +84,7 @@
   <ItemGroup>
     <None Include="Assets\Downloads\TutorialInfo\StyleSheets\ReadmeEditor.uss" />
     <None Include="Assets\Downloads\TutorialInfo\StyleSheets\ReadmeEditorLight.uss" />
-    <None Include="Assets\OccaSoftware\Crosshairs\Readme.txt" />
+    <None Include="Assets\Downloads\OccaSoftware\Crosshairs\Readme.txt" />
     <None Include="Assets\Downloads\TutorialInfo\StyleSheets\ReadmeEditorDark.uss" />
   </ItemGroup>
   <ItemGroup>

@@ -41,6 +41,7 @@ public class EnemyBrain : MonoBehaviour
     NavMeshAgent agent;
     [SerializeField] EnemyData enemyData;
     Animator anim;
+    EnemyEventAnimation animEvent;
 
 
     // gameObject sin collider para marcar puntos de búsqueda
@@ -48,6 +49,7 @@ public class EnemyBrain : MonoBehaviour
     EnemyAttack enemyAttack;
     void Start()
     {
+        animEvent = GetComponentInChildren<EnemyEventAnimation>();
         anim = GetComponentInChildren<Animator>();
         motion = GetComponent<EnemyMotion>();
         sensor = GetComponent<EnemySensor>();
@@ -228,6 +230,10 @@ public class EnemyBrain : MonoBehaviour
     public void Muerto()
     {
         changeState(State.Dead);
+        if (animEvent != null)
+        {
+        animEvent.DisableWeaponHitbox();
+        }
     }
 
     void changeState(State newState)
