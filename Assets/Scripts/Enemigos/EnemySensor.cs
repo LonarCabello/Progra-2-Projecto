@@ -14,7 +14,9 @@ using UnityEngine;
 
 public class EnemySensor : MonoBehaviour
 {
-    
+
+    [SerializeField] private LayerMask VisionMask;
+
     Transform target;
     
     Rigidbody targetRB;
@@ -36,17 +38,17 @@ public class EnemySensor : MonoBehaviour
         bool inAngleV = Vector3.Angle(transform.forward, aux) <= enemyData.angleVisionV;
         if (inAngleH && inAngleV)
         {
-            if(Physics.Raycast(transform.position, direction,out hit, enemyData.visionRange))
+            if(Physics.Raycast(transform.position, direction,out hit, enemyData.visionRange, VisionMask))
             {
                 Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.orange);
                 if ( hit.transform != target)
                 {
-                    Debug.Log($"viendo a {hit.transform.name}");
+                    //Debug.Log($"viendo a {hit.transform.name}");
                 }
-                Debug.Log($"viendo a {target}");
+                //Debug.Log($"viendo a {target}");
                 return hit.transform == target;
             }
-            Debug.Log("esta dentro de los angulos");
+            //Debug.Log("esta dentro de los angulos");
         }
         
         return false;

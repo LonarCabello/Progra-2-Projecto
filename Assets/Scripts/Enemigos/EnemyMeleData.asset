@@ -16,8 +16,8 @@ MonoBehaviour:
   maxHealth: 100
   speed: 4
   damage: 20
-  attackRange: 3
-  attackCooldown: 1.5
+  attackRange: 2.5
+  attackCooldown: 2.5
   visionRange: 20
   walkHearingRange: 3
   runHearingRange: 5

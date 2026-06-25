@@ -42,6 +42,8 @@ public class EnemyAttack : MonoBehaviour
                 inAttack = false;
                 break;
             case EnemyType.Melee:
+                anim.SetTrigger("Attack");
+                inAttack = false;
                 golpear(direction);
                 break;
             case EnemyType.Spectrum:
@@ -66,7 +68,6 @@ public class EnemyAttack : MonoBehaviour
     {
         // Aquí iría la lógica para el ataque cuerpo a cuerpo, como aplicar daño al jugador si está dentro del rango de ataque.
         Debug.Log("Golpeando al jugador!");
-        inAttack = false;
     }
     private void atackSpectrum(Vector3 direction)
     {

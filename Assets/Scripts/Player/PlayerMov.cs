@@ -215,7 +215,6 @@ public class PlayerMov : MonoBehaviour
     {
         //Salto isGround check.
         isGrounded = Physics.Raycast(groundCheck.position, Vector3.down, groundDistance, groundLayer);
-        Debug.Log(isGrounded);
 
         // BLOQUEAR MOVIMIENTO DURANTE ATAQUE
         if (isAttacking)

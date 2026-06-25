@@ -66,18 +66,20 @@
     <Compile Include="Assets\Scripts\Enemigos\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyBrain.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMov.cs" />
+    <Compile Include="Assets\Downloads\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Throwing Animations\Scripts\HumanThrowingAnimationsController.cs" />
     <Compile Include="Assets\Scripts\Player\WeaponDamage.cs" />
     <Compile Include="Assets\Scripts\Enemigos\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyMotion.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyData.cs" />
-    <Compile Include="Assets\Kevin Iglesias\Human Animations\Scripts\SpineProxy.cs" />
     <Compile Include="Assets\Scripts\Enemigos\ProjectileBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Player\ThrowAxe.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Downloads\TutorialInfo\Readme.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\EnemyEventAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemigos\ArcherEventAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemigos\AlertEventManager.cs" />
-    <Compile Include="Assets\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Throwing Animations\Scripts\HumanThrowingAnimationsController.cs" />
+    <Compile Include="Assets\Downloads\Kevin Iglesias\Human Animations\Scripts\SpineProxy.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\EnemyWeaponDamage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloads\TutorialInfo\StyleSheets\ReadmeEditor.uss" />

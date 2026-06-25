@@ -164,7 +164,6 @@ public class EnemyBrain : MonoBehaviour
         {
             timeLastAttack = Time.time;
             enemyAttack.Attack(direction);
-            Debug.Log("quiere atacar archer");
         }
     }
     void UpdateSearch(){
