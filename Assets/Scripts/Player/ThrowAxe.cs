@@ -86,7 +86,7 @@ public class ThrowAxe : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
         rb.isKinematic = true;
 
-        capsuleCol.gameObject.SetActive(true);
+        capsuleCol.enabled = true;
 
         GetComponent<Collider>().isTrigger = true;
     }

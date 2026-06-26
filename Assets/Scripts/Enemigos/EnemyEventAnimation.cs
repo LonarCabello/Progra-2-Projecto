@@ -14,11 +14,13 @@ public class EnemyEventAnimation : MonoBehaviour
 {
     private EnemyAttack enemyAtack;
     [SerializeField] private GameObject enemyWeapon;
+    private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enemyAtack = GetComponentInParent<EnemyAttack>();
+        audioSource = GetComponentInParent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -27,9 +29,9 @@ public class EnemyEventAnimation : MonoBehaviour
 
     }
 
-    public void ShootinAnimation()
+    public void PlaySounds(AudioClip clip)
     {
-        enemyAtack.Shot();
+        audioSource.PlayOneShot(clip);
     }
 
     public void EnableWeaponHitbox()
@@ -47,5 +49,30 @@ public class EnemyEventAnimation : MonoBehaviour
         {
             enemyWD.DisableHitBox();
         }
+    }
+
+    public void PlayEnemyHit()
+    {
+        PlaySounds(SoundManager.Instance.Hit);
+    }
+    public void PlayEnemyDeath()
+    {
+        PlaySounds(SoundManager.Instance.Death);
+    }
+    public void PlayFootStep1()
+    {
+        PlaySounds(SoundManager.Instance.FloorFootStep1);
+    }
+    public void PlayFootStep2()
+    {
+        PlaySounds(SoundManager.Instance.FloorFootStep2);
+    }
+    public void PlayEnemyDeathDropBody()
+    {
+        PlaySounds(SoundManager.Instance.DeathBodyDrop);
+    }
+    public void PlayEnemySwingSword()
+    {
+        PlaySounds(SoundManager.Instance.EnemySwingSword);
     }
 }

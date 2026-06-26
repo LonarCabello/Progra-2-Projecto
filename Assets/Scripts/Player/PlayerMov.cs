@@ -391,12 +391,14 @@ public class PlayerMov : MonoBehaviour
         {
             EquipAxe();
             Destroy(nearbyWeapon);
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupItem);
         }
 
         if (nearbyWeapon.CompareTag("SwordPickUp"))
         {
             EquipSword();
             Destroy(nearbyWeapon);
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.pickupItem);
         }
 
         nearbyWeapon = null;
@@ -468,6 +470,7 @@ public class PlayerMov : MonoBehaviour
             Instantiate(axePickUpPrefab,dropPosition.position, Quaternion.identity);
             battleAxe.SetActive(false);
             currentWeapon = WeaponType.None;
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.DropItem);
         }
 
         if (currentWeapon == WeaponType.Sword)
@@ -475,6 +478,7 @@ public class PlayerMov : MonoBehaviour
             Instantiate(swordPickUpPrefab, dropPosition.position, Quaternion.identity);
             sword.SetActive(false);
             currentWeapon = WeaponType.None;
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.DropItem);
         }
     }
 
@@ -645,6 +649,8 @@ public class PlayerMov : MonoBehaviour
     {
         if (currentPotions == maxPotions) return;
         currentPotions = maxPotions;
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.potionFill);
         Debug.Log("Las pociones han sido llenadas. tienes: " + currentPotions + " pociones");
     }
+
 }

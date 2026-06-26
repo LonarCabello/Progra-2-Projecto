@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Enemigos\EnemyBrain.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMov.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\Scripts\Player\AnimationSoundEvents.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Downloads\Kevin Iglesias\Human Animations\Unity Demo Scenes\Human Throwing Animations\Scripts\HumanThrowingAnimationsController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\Scripts\Enemigos\EnemyMotion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\UiManagerScript.cs" />
