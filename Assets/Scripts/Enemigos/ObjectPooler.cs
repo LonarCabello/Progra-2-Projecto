@@ -28,7 +28,7 @@ public class ObjectPooler : MonoBehaviour
         else
         {
             // Si ya existe otra instancia, la destruimos.
-            Destroy(gameObject);
+            // Destroy(gameObject);
             return;
         }
         
@@ -78,7 +78,27 @@ public class ObjectPooler : MonoBehaviour
         }
 
         // Obtener el objeto de la cola.
-        GameObject objectToSpawn = poolDictionary[tag].Dequeue();
+        GameObject objectToSpawn;
+
+        // Si no quedan objetos en la reserva, instanciar uno nuevo.
+        if (poolDictionary[tag].Count == 0)
+        {
+            Pool pool = pools.Find(p => p.tag == tag);
+            if (pool != null)
+            {
+                objectToSpawn = Instantiate(pool.prefab);
+                objectToSpawn.SetActive(false);
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró un pool con el tag: " + tag);
+                return null;
+            }
+        }
+        else
+        {
+            objectToSpawn = poolDictionary[tag].Dequeue();
+        }
         Rigidbody rb = objectToSpawn.GetComponent<Rigidbody>();
 
         // Activarlo y reubicarlo.

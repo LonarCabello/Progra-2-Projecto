@@ -25,3 +25,4 @@ MonoBehaviour:
   angleVisionH: 45
   angleVisionV: 45
   frecuencySerpenteo: 1
+  projectileTag: Arrow

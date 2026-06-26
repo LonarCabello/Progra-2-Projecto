@@ -144,7 +144,7 @@ public class EnemyBrain : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         motion.Stop();
         agent.ResetPath();
-        if(!sensor.canSeeTarget())
+        if(!sensor.canSeeTarget() && !enemyAttack.inAttack)
         {
             changeState(State.Search);
             RefreshSearchPoints(player.transform);

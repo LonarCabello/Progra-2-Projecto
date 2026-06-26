@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: EnemySpectrumData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   enemyType: 4
-  maxHealth: 0
-  speed: 0
-  damage: 0
-  attackRange: 0
-  attackCooldown: 0
-  visionRange: 0
-  walkHearingRange: 0
-  runHearingRange: 0
-  hearingMessageRange: 0
-  angleVisionH: 0
-  angleVisionV: 0
+  maxHealth: 100
+  speed: 4
+  damage: 10
+  attackRange: 15
+  attackCooldown: 2
+  visionRange: 20
+  walkHearingRange: 4
+  runHearingRange: 8
+  hearingMessageRange: 4
+  angleVisionH: 180
+  angleVisionV: 180
   frecuencySerpenteo: 0
+  projectileTag: Fireball

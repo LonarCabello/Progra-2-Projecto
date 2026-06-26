@@ -24,4 +24,5 @@ public class EnemyData : ScriptableObject
     public float angleVisionH;
     public float angleVisionV;
     public float frecuencySerpenteo=0f;
+    public string projectileTag;
 }

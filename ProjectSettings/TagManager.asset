@@ -10,11 +10,12 @@ TagManager:
   - AxePickUp
   - SwordPickUp
   - Arrow
+  - Fireball
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Ground
