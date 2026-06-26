@@ -11,11 +11,12 @@ TagManager:
   - SwordPickUp
   - Arrow
   - FuenteDePociones
+  - Death
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Death
   - Water
   - UI
   - Ground
