@@ -10,6 +10,7 @@ TagManager:
   - AxePickUp
   - SwordPickUp
   - Arrow
+  - FuenteDePociones
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
+  - Arrow
+  - Player
+  - Environment
   - 
   - 
   - 

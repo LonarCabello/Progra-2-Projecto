@@ -16,13 +16,11 @@ public class EnemyMotion : MonoBehaviour
 {
 
     NavMeshAgent agent;
-    Rigidbody rb;
     EnemyData enemyData;
    // [SerializeField] GameObject a;
     public void Initialize(EnemyData data, NavMeshAgent agent)
     {
         this.agent = agent;
-        rb = GetComponent<Rigidbody>();
         enemyData = data;
         agent.speed = enemyData.speed;
     }
@@ -30,7 +28,7 @@ public class EnemyMotion : MonoBehaviour
     
     public void Stop()
     {
-        rb.linearVelocity = Vector3.zero;
+        agent.isStopped = true;
     }
     
     public void GoTo(Vector3 position, bool spectrumInAttack = false)

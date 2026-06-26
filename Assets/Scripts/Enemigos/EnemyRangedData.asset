@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: EnemyRangedData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   enemyType: 1
-  maxHealth: 50
+  maxHealth: 75
   speed: 2.5
   damage: 20
   attackRange: 15
-  attackCooldown: 2
+  attackCooldown: 3.5
   visionRange: 20
-  walkHearingRange: 0
-  runHearingRange: 0
+  walkHearingRange: 3
+  runHearingRange: 5
   hearingMessageRange: 10
   angleVisionH: 45
   angleVisionV: 45

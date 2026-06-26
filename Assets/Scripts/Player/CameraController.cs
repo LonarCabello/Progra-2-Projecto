@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 28 / 05 / 2026
+ * Title        : CameraControler
+ * Description  : Control de camara 3ra persona.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class CameraController : MonoBehaviour

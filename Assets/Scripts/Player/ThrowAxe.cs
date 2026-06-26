@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 11 / 06 / 2026
+ * Title        : ThrowAxe
+ * Description  : Comportamiento de hachas arrojadizas.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class ThrowAxe : MonoBehaviour

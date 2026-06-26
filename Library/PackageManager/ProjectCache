@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 639179340414798440
+=======
+      ticks: 639179106071240562
+>>>>>>> Oriel
     m_Hash: 4102851295
   m_LockFileStatus:
     m_FilePath: D:/Documentos/GitHub/Progra-2-Projecto/Progra-2-Projecto/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 639179339371522744
+=======
+      ticks: 639179106071245565
+>>>>>>> Oriel
     m_Hash: 3994754800
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

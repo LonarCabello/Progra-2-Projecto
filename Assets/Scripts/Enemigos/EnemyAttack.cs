@@ -2,18 +2,22 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    Transform player;
     ObjectPooler pooler;
     [SerializeField] private GameObject firePoint;
     string projectileTag;
     EnemyData enemyData;
     bool inAttack;
     EnemyMotion motion;
+    Animator anim;
 
-    public void Initialize(EnemyData data, EnemyMotion motion)
+
+    public void Initialize(EnemyData data, EnemyMotion motion, Transform player)
     {
+        anim = GetComponentInChildren<Animator>();
         this.enemyData = data;
         this.motion = motion;
+        this.player = player;
         if(data.enemyType == EnemyType.Ranged)
         {
             pooler = ObjectPooler.Instance;
@@ -34,9 +38,12 @@ public class EnemyAttack : MonoBehaviour
         switch (enemyData.enemyType)
         {
             case EnemyType.Ranged:
-                Shot(direction);
+                anim.SetTrigger("Shoot");
+                inAttack = false;
                 break;
             case EnemyType.Melee:
+                anim.SetTrigger("Attack");
+                inAttack = false;
                 golpear(direction);
                 break;
             case EnemyType.Spectrum:
@@ -47,18 +54,20 @@ public class EnemyAttack : MonoBehaviour
                 break;
         }
     }
-    private void Shot(Vector3 direction)
+    public void Shot()
     {
-        GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, direction.normalized);
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        inAttack = false;
+        GameObject projectile = pooler.SpawnFromPool(projectileTag, firePoint, player.position - transform.position);
         // projectile.GetComponent<Rigidbody>().velocity = direction * pooler.pools.Find(pool => pool.tag == projectileTag).velocity;
     }
+
+    //public void ShootinAnimation()
+    //{
+    //    Shot(direction);
+    //}
     private void golpear(Vector3 direction)
     {
         // Aquí iría la lógica para el ataque cuerpo a cuerpo, como aplicar daño al jugador si está dentro del rango de ataque.
         Debug.Log("Golpeando al jugador!");
-        inAttack = false;
     }
     private void atackSpectrum(Vector3 direction)
     {

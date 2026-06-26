@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 03 / 06 / 2026
+ * Title        : WeaponDamage
+ * Description  : Controla el daño que hacen las armas, como tambien sus colisiones.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class WeaponDamage : MonoBehaviour

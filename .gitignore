@@ -1,2 +1,8 @@
 /Library
 /Library
+.vscode
+
+[Tt]emp
+*.tmp
+
+*.meta

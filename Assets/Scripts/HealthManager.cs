@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 03 / 06 / 2026
+ * Title        : HealthManager
+ * Description  : Manager de vida de jugador/enemigos.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class HealthManager : MonoBehaviour
@@ -12,11 +22,12 @@ public class HealthManager : MonoBehaviour
 
     public bool IsDead { get; private set; }
 
+    private EnemyBrain enemyBrain;
+
     private Animator anim;
 
     void Start()
-    {
-        anim = GetComponent<Animator>();    
+    {  
         currentHealth = maxHealth;
     }
 
@@ -37,21 +48,31 @@ public class HealthManager : MonoBehaviour
 
         if (this.CompareTag("Player"))
         {
+            anim = GetComponent<Animator>();
             PlayerMov playerMov = GetComponent<PlayerMov>();
             if (playerMov.isBlocking == true)
             {
                 Debug.Log("bloqueando, no recibe daño");
                 anim.SetTrigger("TakenDamage");
+                playerMov.isAttacking = false;
                 return;
             }
+            playerMov.isAttacking = false;
         }
+
+        if (this.CompareTag("Enemy"))
+        {
+            anim = GetComponentInChildren<Animator>();
+            enemyBrain = GetComponent<EnemyBrain>();
+        }
+
         currentHealth -= damage;
 
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
         anim.SetTrigger("TakenDamage");
 
-        Debug.Log(gameObject.name + " recibió " + damage + " de daño");
+        Debug.Log(gameObject.name + " recibió " + damage + " de daño. Ahora tiene: " + currentHealth + " puntos de vida ");
 
         canTakeDamage = false;
         Invoke(nameof(ResetDamageCoolDown), damageCoolDown);
@@ -62,14 +83,28 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void Heal(int amount)
+    public void HealTrigger()
+    {
+        if (IsDead) return;
+
+        Debug.Log("por curarse");
+        anim.SetTrigger("Heal");
+
+    }
+
+    public void Heal()
     {
         if (IsDead)
             return;
 
-        currentHealth += amount;
+        //currentHealth += 50;
 
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth = Mathf.Clamp(currentHealth + 50, 0, maxHealth);
+
+        Debug.Log(gameObject.name + " Se curo " + 50 + " de vida. Ahora tiene: " + currentHealth + " puntos de vida ");
+
+        PlayerMov playerMov = GetComponent<PlayerMov>();
+        playerMov.isHealing = false;
     }
 
     private void ResetDamageCoolDown()
@@ -84,6 +119,12 @@ public class HealthManager : MonoBehaviour
         anim.SetTrigger("Death");
 
         Debug.Log(gameObject.name + " murió");
+
+        if (this.CompareTag("Enemy"))
+        {
+            enemyBrain.Muerto();
+
+        }
     }
 
     //Devuelve la vida actual

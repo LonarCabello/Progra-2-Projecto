@@ -32,11 +32,17 @@ public class ProjectileBehaviourScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
+
+
         // Insertar lógica de daño al player
         if (col.CompareTag("Player"))
         {
+            Debug.Log(col.name);
             HealthManager health = col.GetComponent<HealthManager>();
-            health.TakeDamage(damage);
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
         }
 
         Debug.Log("Hit " + col.gameObject.name);
