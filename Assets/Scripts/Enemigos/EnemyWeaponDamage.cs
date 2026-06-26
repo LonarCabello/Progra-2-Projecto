@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 25 / 06 / 2026
+ * Title        : EnemyWeaponDamage
+ * Description  : Controla el daño que hacen las armas que tienen los enemigos.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class EnemyWeaponDamage : MonoBehaviour

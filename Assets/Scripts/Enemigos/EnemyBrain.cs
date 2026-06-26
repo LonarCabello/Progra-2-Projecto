@@ -42,13 +42,14 @@ public class EnemyBrain : MonoBehaviour
     [SerializeField] EnemyData enemyData;
     Animator anim;
     EnemyEventAnimation animEvent;
-
+    CapsuleCollider capsuleCol;
 
     // gameObject sin collider para marcar puntos de búsqueda
     [SerializeField] GameObject refe;
     EnemyAttack enemyAttack;
     void Start()
     {
+        capsuleCol = GetComponent<CapsuleCollider>();
         animEvent = GetComponentInChildren<EnemyEventAnimation>();
         anim = GetComponentInChildren<Animator>();
         motion = GetComponent<EnemyMotion>();
@@ -230,6 +231,7 @@ public class EnemyBrain : MonoBehaviour
     public void Muerto()
     {
         changeState(State.Dead);
+        capsuleCol.enabled = false;
         if (animEvent != null)
         {
         animEvent.DisableWeaponHitbox();

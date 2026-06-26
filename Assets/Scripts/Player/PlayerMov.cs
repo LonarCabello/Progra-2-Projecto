@@ -37,7 +37,7 @@ public class PlayerMov : MonoBehaviour
     //Heal Player
     [Header("Healing Potion")]
     [SerializeField] private int maxPotions;
-    [SerializeField] private int currentPotions;
+    [SerializeField] public int currentPotions;
     private HealthManager healMan;
     [SerializeField] private GameObject potionObj;
     public bool isHealing;

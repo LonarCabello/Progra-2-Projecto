@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 25 / 06 / 2026
+ * Title        : AnimacionesArcher.
+ * Description  : Controla Eventos en animaciones del enemigo archer.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class ArcherEventAnimation : MonoBehaviour

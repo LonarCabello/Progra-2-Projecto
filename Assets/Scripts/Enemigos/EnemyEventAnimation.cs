@@ -1,3 +1,13 @@
+/*
+ * =============<< ********* >>=============
+ * Author       : Oriel Fernandes
+ * Email        : Fernandesorielilled@gmail.com
+ * Created Date : 25 / 06 / 2026
+ * Title        : EnemyEventAnimation.
+ * Description  : Controla los eventos de las animaciones de los enemigos.
+ * =============<< ********* >>=============
+ */
+
 using UnityEngine;
 
 public class EnemyEventAnimation : MonoBehaviour
