@@ -72,4 +72,12 @@ public class AnimationSoundEvents : MonoBehaviour
         SoundManager.Instance.PlaySFX(SoundManager.Instance.Jump);
 
     }
+    public void PlayDeath()
+    {
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.Death);
+    }
+    public void PlayDeathBodyDrop()
+    {
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.DeathBodyDrop);
+    }
 }

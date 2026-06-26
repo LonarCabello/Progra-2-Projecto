@@ -51,7 +51,7 @@ public class PlayerMov : MonoBehaviour
     private Vector3 movement;
 
     [Header("Sistema de Ataque")]
-    [SerializeField] private float attackDuration = 1.15f;
+    //[SerializeField] private float attackDuration = 1.15f;
     public bool isAttacking;
 
     [Header("Sistema de Combos")]
@@ -82,6 +82,9 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] public int currentAxes = 3;
     [SerializeField] public int maxAxes = 3;
 
+    [Header("CheckPoint")]
+    [SerializeField] private Transform currentCheckPoint;
+    [SerializeField] private BoxCollider boxColliderTrackEnemy;
 
     void Awake()
     {
@@ -98,9 +101,21 @@ public class PlayerMov : MonoBehaviour
 
     void Update()
     {
+        if (healMan.IsDead) 
+        {
+            boxColliderTrackEnemy.enabled = false;
+            return;
+        } 
         // -------------------------- INPUTS -----------------------------
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+
+
+        //debug
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    transform.position = currentCheckPoint.position;
+        //}
 
         //Running
         if (Input.GetKey(KeyCode.LeftShift) && !isThrowingHold && !isBlocking)
@@ -653,4 +668,23 @@ public class PlayerMov : MonoBehaviour
         Debug.Log("Las pociones han sido llenadas. tienes: " + currentPotions + " pociones");
     }
 
+    public void SetCurrentCheckPoint(Transform checkpoint)
+    {
+        currentCheckPoint = checkpoint;
+        Debug.Log("CheckPoint guardado");
+    }
+
+    public void Respawn()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        currentPotions = maxPotions;
+        currentAxes = maxAxes;
+        animator.SetTrigger("Respawn");
+        healMan.ResetHealth();
+        transform.position = currentCheckPoint.position;
+        boxColliderTrackEnemy.enabled = true;
+        DeathUIManager.Instance.HideDeathScreen();
+
+    }
 }

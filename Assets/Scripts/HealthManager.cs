@@ -123,7 +123,10 @@ public class HealthManager : MonoBehaviour
         if (this.CompareTag("Enemy"))
         {
             enemyBrain.Muerto();
-
+        }
+        if (this.CompareTag("Player"))
+        {
+            DeathUIManager.Instance.ShowDeathScreen();
         }
     }
 
@@ -139,5 +142,11 @@ public class HealthManager : MonoBehaviour
     public float GetHealthPercent()
     {
         return (float)currentHealth / maxHealth;
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        IsDead = false;
     }
 }
