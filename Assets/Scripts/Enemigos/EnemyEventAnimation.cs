@@ -15,12 +15,16 @@ public class EnemyEventAnimation : MonoBehaviour
     private EnemyAttack enemyAtack;
     [SerializeField] private GameObject enemyWeapon;
     private AudioSource audioSource;
+    private Animator anim;
+    private CapsuleCollider capsuleCollider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enemyAtack = GetComponentInParent<EnemyAttack>();
         audioSource = GetComponentInParent<AudioSource>();
+        capsuleCollider = GetComponentInParent<CapsuleCollider>();
+        anim = GetComponent<Animator>();    
     }
 
     // Update is called once per frame
@@ -51,6 +55,21 @@ public class EnemyEventAnimation : MonoBehaviour
         }
     }
 
+
+    public void EnableCapsuleColliderHitbox()
+    {
+        capsuleCollider.enabled = true;
+    }
+    public void DisableCapsuleColliderHitbox()
+    {
+        capsuleCollider.enabled = false;
+    }
+
+    public void AtravesandoTrue()
+    {
+        anim.SetBool("Atravesando", true);
+    }
+
     public void PlayEnemyHit()
     {
         PlaySounds(SoundManager.Instance.Hit);
@@ -74,5 +93,28 @@ public class EnemyEventAnimation : MonoBehaviour
     public void PlayEnemySwingSword()
     {
         PlaySounds(SoundManager.Instance.EnemySwingSword);
+    }
+    public void PlayBossLaughing()
+    {
+        PlaySounds(SoundManager.Instance.BossLaughing);
+    }
+    public void PlayBossAttackProjectiles()
+    {
+        PlaySounds(SoundManager.Instance.BossAttackProjectiles);
+
+    }
+    public void PlayBossAttackAtravesando()
+    {
+        PlaySounds(SoundManager.Instance.BossAttackAtravesando);
+    }
+    public void PlayBossHurt()
+    {
+        PlaySounds(SoundManager.Instance.BossHurt);
+
+    }
+    public void PlayBossDeath()
+    {
+        PlaySounds(SoundManager.Instance.BossDead);
+
     }
 }

@@ -15,7 +15,7 @@ public class HealthManager : MonoBehaviour
     [Header("Vida")]
     public int maxHealth = 150;
 
-    private int currentHealth;
+    [SerializeField] private int currentHealth;
 
     [SerializeField] float damageCoolDown = 0.5f;
     private bool canTakeDamage = true;  

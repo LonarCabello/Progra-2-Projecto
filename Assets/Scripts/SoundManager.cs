@@ -26,6 +26,14 @@ public class SoundManager : MonoBehaviour
     public AudioClip EnemyBowRealease;
     public AudioClip EnemySwingSword;
 
+    [Header("Boss")]
+    public AudioClip BossAttackProjectiles;
+    public AudioClip BossAttackAtravesando;
+    public AudioClip BossLaughing;
+    public AudioClip BossHurt;
+    public AudioClip BossDead;
+
+
     [Header("Items")]
     public AudioClip potionDrink;
     public AudioClip throwAxe;

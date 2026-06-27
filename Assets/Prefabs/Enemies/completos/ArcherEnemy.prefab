@@ -1353,6 +1353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
   firePoint: {fileID: 3323785067090407455}
+  inAttack: 0
 --- !u!114 &789779297470374871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,7 +1380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySensor
   VisionMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 576
 --- !u!114 &6732047708676024984
 MonoBehaviour:
   m_ObjectHideFlags: 0
