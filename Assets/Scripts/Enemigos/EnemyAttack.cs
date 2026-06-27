@@ -72,6 +72,7 @@ public class EnemyAttack : MonoBehaviour
     }
     IEnumerator attackSpectrumGolpe(Vector3 direction)
     {
+        anim.SetBool("Atravesando", false);
         anim.SetTrigger("Acostarse");
         // Pasar a modo tangible
         Vector3 initialPosition = transform.position;
@@ -92,6 +93,7 @@ public class EnemyAttack : MonoBehaviour
     }
     IEnumerator attackSpectrumShoot(float duration, float shootInterval, float degreesTotal)
     {
+        anim.SetBool("Atravesando", false);
         anim.SetBool("Shooting", true);
         Debug.LogWarning("Iniciando ataque de espectro Disparos giratorios");
         Quaternion initialRotation = transform.rotation;
@@ -109,6 +111,7 @@ public class EnemyAttack : MonoBehaviour
             }
         }
         anim.SetBool("Shooting",false);
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.BossLaughing);
         yield return new WaitForSeconds(3f); // Espera un segundo antes de finalizar el ataque
         inAttack = false;
         Debug.LogWarning("Finalizando ataque de espectro Disparos giratorios");
