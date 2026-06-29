@@ -72,7 +72,7 @@ public class ThrowAxe : MonoBehaviour
 
         }
 
-        if (col.CompareTag("Ground"))
+        if (col.CompareTag("Ground") || col.CompareTag("Enviroment");
         {
             StickToGround();
         }

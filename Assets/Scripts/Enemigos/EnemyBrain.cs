@@ -45,7 +45,7 @@ public class EnemyBrain : MonoBehaviour
     CapsuleCollider capsuleCol;
 
     // gameObject sin collider para marcar puntos de búsqueda
-    [SerializeField] GameObject refe;
+    //[SerializeField] GameObject refe;
     EnemyAttack enemyAttack;
     void Start()
     {
@@ -216,7 +216,7 @@ public class EnemyBrain : MonoBehaviour
 
     void RefreshSearchPoints(Transform pointToSearch)
     {
-        refe.transform.position = pointToSearch.position;
+        //refe.transform.position = pointToSearch.position;
         searchPoints.Clear();
         searchPoints.Enqueue(pointToSearch.position);
         searchPoints.Enqueue(pointToSearch.position+pointToSearch.forward*3f);
